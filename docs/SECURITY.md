@@ -1,0 +1,11 @@
+# Security controls and evidence
+- Core pipeline imports no network client and makes no network requests.
+- Original inputs copied unchanged; SHA-256 manifest and immutability integration test.
+- SQL inserts use bound parameters; no CSV text interpolated into SQL.
+- Formula-injection protection in safe_cell; tests include whitespace and negative numbers.
+- No credentials required, printed or committed. Environment files ignored.
+- Static publication must exclude raw/clean files and customer names/keys.
+- Local repository is not public. No deployment has been made.
+- Numeric claim schema rejects unknown fields and nonfinite numbers.
+- Candidate must inspect submission for personal details before sharing.
+- Dependency audits and hosted CI are pending until executed; they are not claimed passed.
