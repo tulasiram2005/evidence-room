@@ -1,0 +1,31 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "numbers": [
+        {
+          "evidence_id": "E-001",
+          "label": "August",
+          "unit": "INR paise",
+          "value": 180900000
+        }
+      ],
+      "text": "Trusted completed revenue for August is 180900000 INR paise.",
+      "type": "number"
+    },
+    {
+      "id": "C2",
+      "numbers": [
+        {
+          "evidence_id": "E-002",
+          "label": "September",
+          "unit": "INR paise",
+          "value": 113740000
+        }
+      ],
+      "text": "Trusted completed revenue for September is 113740000 INR paise.",
+      "type": "number"
+    }
+  ],
+  "insight_title": "Trusted monthly revenue"
+}

@@ -188,6 +188,8 @@ def run():
     write_json(results / 'flip.json', flip)
     from .summary import generate
     generate(ROOT, kpis, scenarios, rows)
+    from .ai import generate as generate_ai
+    generate_ai(ROOT, kpis)
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT / 'data/raw').glob('*.csv'))}
     write_json(ROOT / 'data/raw.sha256', hashes)
     write_json(results / 'manifest.json', {'inputs': hashes, 'pandas_version': pd.__version__, 'output_hashes': {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(results.glob('*.json')) if p.name != 'manifest.json'}})

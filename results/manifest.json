@@ -5,8 +5,12 @@
     "data/raw/products.csv": "f8d08f45b7b85fb99193a9dfba8d0d6434bb59f425226e98700e1af34402a3e8"
   },
   "output_hashes": {
+    "ai_cache.json": "767e566ae5b2d28723c3e5de5a9e4314698e334854ee4e608460397eea7e3e7a",
+    "ai_claims.json": "d29e3a2205abb36a414e4bbf9a9988c57dd2b265c2908c7089c518e16830702b",
+    "claim_checks.json": "1372e9d11bd2d31894d53d05a507e1d15c981c1ec4fc16350faff02aaae981b1",
     "data_health.json": "f12a326f76c66fbe0830fdab06beb889db2626dd06f17868c142a363a553d29f",
     "decisions.json": "0387240fac7f6eeb17e0287ecee44377693aa05eff3c0432c28e7d482d04d6d3",
+    "evidence.json": "3cec8b59ca522bd3dbbd573f18e6071f3332e86dc55a8ecd4c8ff32998eb1367",
     "flip.json": "039099bc491aaf7a8c0c900fcbea15f99bdf6b164be8beced3b60cbf254a0640",
     "kpis.json": "f758451194ee4ffb75820415ffc43e936c52500e2d5fdc2fc9571421d84f5b21",
     "parity.json": "70a74d657dcd39065b44be4af2893317eff3fbcae57a11c3f8b893d77fb6e23d",

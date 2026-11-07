@@ -1,0 +1,37 @@
+{
+  "model": null,
+  "prompt": "Draft trusted monthly revenue claims using only the supplied evidence records. Do not infer causes.",
+  "prompt_hash": "3ac144d61050845a7a36d9781bfa1eddc945f6094a1f5e64b4c5edd9976fe8e6",
+  "provider": "deterministic_mock",
+  "response": {
+    "claims": [
+      {
+        "id": "C1",
+        "numbers": [
+          {
+            "evidence_id": "E-001",
+            "label": "August",
+            "unit": "INR paise",
+            "value": 180900000
+          }
+        ],
+        "text": "Trusted completed revenue for August is 180900000 INR paise.",
+        "type": "number"
+      },
+      {
+        "id": "C2",
+        "numbers": [
+          {
+            "evidence_id": "E-002",
+            "label": "September",
+            "unit": "INR paise",
+            "value": 113740000
+          }
+        ],
+        "text": "Trusted completed revenue for September is 113740000 INR paise.",
+        "type": "number"
+      }
+    ],
+    "insight_title": "Trusted monthly revenue"
+  }
+}

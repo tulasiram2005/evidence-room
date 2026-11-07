@@ -1,0 +1,16 @@
+{
+  "E-001": {
+    "allowed_text": "Trusted completed revenue for August is 180900000 INR paise.",
+    "pointer": "/monthly/0/revenue_paise",
+    "source_file": "results/kpis.json",
+    "unit": "INR paise",
+    "value": 180900000
+  },
+  "E-002": {
+    "allowed_text": "Trusted completed revenue for September is 113740000 INR paise.",
+    "pointer": "/monthly/1/revenue_paise",
+    "source_file": "results/kpis.json",
+    "unit": "INR paise",
+    "value": 113740000
+  }
+}
