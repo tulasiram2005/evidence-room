@@ -16,13 +16,18 @@
 - Local tests and build; recorded results in results/test_report.json and npm_audit.json.
 - Private GitHub repository backed up; no cloud runtime or paid service enabled.
 
+- Hypothesis suite: two properties with 100 generated cases each.
+- 39 tests passed; local security scans passed after isolated toolchain upgrades.
+
+- Baseline plus three design revisions passed: 320 screenshots; eight theme/viewport combinations per run; no reported axe violations, console errors or external requests.
+- Local Lighthouse: performance 100, accessibility 100, best practices 100, SEO 82. Meta description and robots.txt fixes build successfully; their effect has not been remeasured.
+- Vercel dashboard identifies the selected workspace as Hobby (checked 2026-11-07). No deployment created yet.
+
 ## Not yet fulfilled from the expanded master prompt
-- Hypothesis suite now implemented: two properties, 100 generated cases each.
-- Full typed/linted/security-scanned CI, transitive Python lock and hosted CI execution.
+- Hosted CI execution and remaining SQL lint/type gates. Python transitive lock, local Ruff/Bandit/pip-audit and TypeScript build checks are implemented.
 - Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Native model-directed function calling and live validation remain pending.
 - The complete custom design specification (fonts, every-number evidence drawers,
   animated waterfall/bounds visuals, copy controls and shortcut sheet).
-- Baseline and revision 1: complete viewport/theme matrix, axe and network audit passed. All three revision matrices now passed: 320 screenshots total including baseline. Lighthouse remains pending. Contrast passed for 17 configured pairs.
 - Cloudflare/Vercel deployment and verified account allowance/response headers.
 - Candidate's independent review, personalized explanation and actual submission.
 
