@@ -7,12 +7,12 @@ candidate instructions are in `docs/challenge_readme.md`. Core deliverables come
 before the optional website. See `executive_summary.md` for the computed findings.
 
 ## Run
-Requires Python 3.11 or newer.
+Use Python 3.11 for the pinned, tested development environment.
 
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pandas==2.3.3
+pip install -r requirements-dev.lock
 python analysis.py
 python -m unittest discover -s tests -v
 ```

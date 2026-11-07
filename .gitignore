@@ -8,3 +8,5 @@ web/dist/
 .hypothesis/
 .ruff_cache/
 results/provider_run.json
+
+.venv311/

@@ -1,9 +1,6 @@
-import copy
-import hashlib
 import json
 import unittest
-from pathlib import Path
-from src.evidence.pipeline import ROOT, classify, date_value, safe_cell, run
+from src.evidence.pipeline import ROOT, classify, safe_cell, run
 
 class Rules(unittest.TestCase):
     def row(self, **changes):

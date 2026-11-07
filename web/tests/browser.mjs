@@ -6,7 +6,8 @@ const out='../results/screenshots/baseline';fs.mkdirSync(out,{recursive:true});
 let browser;
 try{
  browser=await chromium.launch({channel:'chrome',headless:true});
- const page=await browser.newPage();
+ const context=await browser.newContext();
+ const page=await context.newPage();
  page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1:4173')&&!r.url().startsWith('data:'))result.externalRequests.push(r.url())});
  page.on('pageerror',e=>result.consoleErrors.push(e.message));
  page.on('console',m=>{if(m.type()==='error')result.consoleErrors.push(m.text())});

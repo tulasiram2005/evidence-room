@@ -8,3 +8,11 @@ unlinked prose number, lifetime scope and unsupported factual prose.
 The pipeline's drafter is deterministic mock code; no external model was called.
 The candidate must independently review the decisions and figures and add only
 review actions they actually performed. Time spent has not been invented.
+
+## Subsequent implementation and checks
+Codex added eight strictly validated read-only aggregate tools, generated Hypothesis
+invariant tests, and optional Gemini/Ollama transports. Provider tests used fake
+responses; no live model use is claimed. A security scanner identified Python
+assertions that could disappear under optimized execution; explicit ValueError
+checks replaced them. Dependency auditing identified old pip/setuptools in the
+isolated environment; those tools were upgraded locally, not system-wide.

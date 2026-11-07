@@ -9,3 +9,13 @@
 - Numeric claim schema rejects unknown fields and nonfinite numbers.
 - Candidate must inspect submission for personal details before sharing.
 - Dependency audits and hosted CI are pending until executed; they are not claimed passed.
+
+## Additional measured checks
+The Python 3.11 environment was audited with pip-audit; old pip/setuptools findings
+were fixed by upgrading the isolated environment. Current report is in
+results/pip_audit.json. Bandit findings about disableable assertions were fixed;
+core invariants now raise ValueError even under optimized Python execution.
+The repository-history pattern scan is in results/publication_check.json. It is
+an aid to review, not a guarantee that arbitrary sensitive content is detectable.
+Provider transports reject redirects/unapproved hosts, limit response bytes and
+use bounded timeouts/retries. Live provider execution remains unverified.

@@ -17,9 +17,9 @@
 - Private GitHub repository backed up; no cloud runtime or paid service enabled.
 
 ## Not yet fulfilled from the expanded master prompt
-- Hypothesis property suite (current tests use explicit fixtures and generated loops).
+- Hypothesis suite now implemented: two properties, 100 generated cases each.
 - Full typed/linted/security-scanned CI, transitive Python lock and hosted CI execution.
-- Live Gemini/Ollama provider chain and the complete eight-tool function-calling interface.
+- Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Native model-directed function calling and live validation remain pending.
 - The complete custom design specification (fonts, every-number evidence drawers,
   animated waterfall/bounds visuals, copy controls and shortcut sheet).
 - Three screenshot-backed design iterations, complete viewport matrix, axe,

@@ -12,6 +12,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install pandas==2.3.3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements-dev.lock
       - run: python analysis.py
-      - run: python -m unittest discover -s tests -v
+      - run: python tools/check.py
+      - run: ruff check src tests tools analysis.py --select F
+      - run: bandit -r src -f json -o results/bandit.json
+      - run: pip-audit --format json --output results/pip_audit.json
+      - run: npm ci --prefix web
+      - run: npm audit --prefix web
+      - run: npm run build --prefix web
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-evidence
+          path: |
+            results/test_report.json
+            results/bandit.json
+            results/pip_audit.json
+          retention-days: 3

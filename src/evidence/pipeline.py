@@ -13,6 +13,10 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 MONTHS = ('2026-08', '2026-09')
 
+def require(condition, message='Evidence invariant failed'):
+    if not condition:
+        raise ValueError(message)
+
 def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, sort_keys=True, ensure_ascii=False) + '\n')
 
@@ -163,17 +167,17 @@ def run():
     df = pd.DataFrame(clean)
     independent = {m: int(df.loc[df.order_month == m, 'revenue_paise'].sum()) for m in MONTHS}
     sql_totals = {r['order_month']: r['revenue_paise'] for r in kpis['monthly']}
-    assert independent == sql_totals, 'Pandas/SQL monthly mismatch'
+    require(independent == sql_totals, 'Pandas/SQL monthly mismatch')
     pandas_top = df.groupby('product_id').revenue_paise.sum().sort_values(ascending=False)
     sql_top = {r['product_id']: r['revenue_paise'] for r in kpis['top_products']}
-    assert {k: int(v) for k,v in pandas_top.head(10).items()} == sql_top
+    require({k: int(v) for k,v in pandas_top.head(10).items()} == sql_top)
     df['first'] = df.groupby('customer_id').normalized_date.transform('min')
     df['cohort'] = df.apply(lambda r: 'new' if r.normalized_date == r['first'] else 'repeat', axis=1)
     for r in kpis['cohorts']:
         subset = df[(df.order_month == r['order_month']) & (df.cohort == r['cohort'])]
-        assert (int(subset.revenue_paise.sum()), len(subset), subset.customer_id.nunique()) == (r['revenue_paise'], r['orders'], r['customers'])
+        require((int(subset.revenue_paise.sum()), len(subset), subset.customer_id.nunique()) == (r['revenue_paise'], r['orders'], r['customers']))
     for row in kpis['reconciliation']:
-        assert row['naive_mixed_currency_face_paise'] + row['excluded_delta_paise'] + row['conversion_delta_paise'] == row['trusted_revenue_paise']
+        require(row['naive_mixed_currency_face_paise'] + row['excluded_delta_paise'] + row['conversion_delta_paise'] == row['trusted_revenue_paise'])
     write_json(results / 'kpis.json', kpis)
     write_json(results / 'parity.json', {'monthly': True, 'top_products': True, 'cohorts': True})
     waterfall = {}
@@ -186,7 +190,7 @@ def run():
             if r['bucket'] != 'clean': deltas[r['reason_code']] -= face
             else: deltas['USD_CONVERSION_EFFECT'] += Decimal(r['revenue_paise']) / 100 - face
         end = naive + sum(deltas.values())
-        assert end * 100 == independent[month]
+        require(end * 100 == independent[month])
         waterfall[month] = {'naive_mixed_currency_face_value': str(naive), 'deltas': {k: str(v) for k,v in sorted(deltas.items())}, 'trusted_inr': str(end), 'warning': 'Face values mix currencies; ratio is not monetary coverage.', 'trusted_row_share': sum(r['bucket'] == 'clean' for r in relevant) / len(relevant)}
     write_json(results / 'waterfall.json', waterfall)
     scenarios = []
