@@ -2,7 +2,9 @@ import {chromium} from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 const result={checks:[],externalRequests:[],consoleErrors:[],axe:[],screenshots:[],passed:false};
-const out='../results/screenshots/baseline';fs.mkdirSync(out,{recursive:true});
+const label=process.argv[2]||'baseline';
+if(!/^[a-z0-9-]+$/.test(label))throw new Error('Invalid audit label');
+const out=`../results/screenshots/${label}`;fs.mkdirSync(out,{recursive:true});
 let browser;
 try{
  browser=await chromium.launch({channel:'chrome',headless:true});
@@ -25,9 +27,9 @@ try{
   }
  }
  await page.locator('#scenario').selectOption('reject_slash');
- if(!(await page.getByRole('status').innerText()).includes('36.61'))throw new Error('Scenario does not update');result.checks.push('Scenario updates to computed values');
+ if(!(await page.locator('#what-could-change-it').getByRole('status').innerText()).includes('36.61'))throw new Error('Scenario does not update');result.checks.push('Scenario updates to computed values');
  await page.locator('#reason').selectOption('INVALID_DATE');
  if(await page.locator('.receipts article').count()!==2)throw new Error('Receipt filter failed');result.checks.push('Rejection filter matches evidence');
  result.checks.push('Eight theme/viewport combinations without overflow');
  result.passed=!result.consoleErrors.length&&!result.externalRequests.length&&result.axe.every(x=>!x.violations.length);
-}catch(e){result.failure=String(e).split("\n")[0]}finally{if(browser)await browser.close();fs.writeFileSync('../results/ui.json',JSON.stringify(result,null,2));console.log(JSON.stringify({...result,screenshots:result.screenshots.length},null,2));if(!result.passed)process.exitCode=1}
+}catch(e){result.failure=String(e).split("\n")[0]}finally{if(browser)await browser.close();fs.writeFileSync(`../results/ui-${label}.json`,JSON.stringify(result,null,2));fs.writeFileSync('../results/ui.json',JSON.stringify(result,null,2));console.log(JSON.stringify({...result,screenshots:result.screenshots.length},null,2));if(!result.passed)process.exitCode=1}
