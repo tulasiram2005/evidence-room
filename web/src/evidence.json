@@ -1,0 +1,679 @@
+{
+  "claim_checks": [
+    {
+      "checks": [
+        {
+          "evidence_id": "E-001",
+          "expected": {
+            "allowed_text": "Trusted completed revenue for August is 180900000 INR paise.",
+            "pointer": "/monthly/0/revenue_paise",
+            "source_file": "results/kpis.json",
+            "unit": "INR paise",
+            "value": 180900000
+          },
+          "verdict": "verified"
+        }
+      ],
+      "id": "C1",
+      "issues": [],
+      "text": "Trusted completed revenue for August is 180900000 INR paise.",
+      "verdict": "verified"
+    },
+    {
+      "checks": [
+        {
+          "evidence_id": "E-002",
+          "expected": {
+            "allowed_text": "Trusted completed revenue for September is 113740000 INR paise.",
+            "pointer": "/monthly/1/revenue_paise",
+            "source_file": "results/kpis.json",
+            "unit": "INR paise",
+            "value": 113740000
+          },
+          "verdict": "verified"
+        }
+      ],
+      "id": "C2",
+      "issues": [],
+      "text": "Trusted completed revenue for September is 113740000 INR paise.",
+      "verdict": "verified"
+    }
+  ],
+  "data_health": {
+    "customers": {
+      "blank_cells": {
+        "customer_id": 0,
+        "customer_name": 0,
+        "region": 0
+      },
+      "columns": [
+        "customer_id",
+        "customer_name",
+        "region"
+      ],
+      "repeated_key_groups": 0,
+      "rows": 80
+    },
+    "orders": {
+      "blank_cells": {
+        "currency": 0,
+        "customer_id": 2,
+        "order_date": 0,
+        "order_id": 0,
+        "product_id": 0,
+        "quantity": 0,
+        "status": 0,
+        "unit_price": 0
+      },
+      "columns": [
+        "order_id",
+        "order_date",
+        "customer_id",
+        "product_id",
+        "quantity",
+        "unit_price",
+        "currency",
+        "status"
+      ],
+      "currency_values": {
+        "EUR": 1,
+        "INR": 242,
+        "USD": 1
+      },
+      "invalid_dates": 2,
+      "repeated_key_groups": 4,
+      "rows": 244,
+      "status_values": {
+        " Completed ": 1,
+        "COMPLETE": 1,
+        "cancelled": 15,
+        "completed": 211,
+        "refunded": 16
+      }
+    },
+    "products": {
+      "blank_cells": {
+        "category": 0,
+        "product_id": 0,
+        "product_name": 0
+      },
+      "columns": [
+        "product_id",
+        "product_name",
+        "category"
+      ],
+      "repeated_key_groups": 0,
+      "rows": 12
+    }
+  },
+  "decisions": {
+    "buckets": {
+      "clean": 197,
+      "exact_duplicate_removed": 3,
+      "not_completed": 30,
+      "rejected": 14
+    },
+    "primary_reasons": {
+      "CONFLICTING_DUPLICATE": 2,
+      "EXACT_DUPLICATE_REMOVED": 3,
+      "INVALID_CUSTOMER_KEY": 3,
+      "INVALID_DATE": 2,
+      "INVALID_PRODUCT_KEY": 2,
+      "NON_POSITIVE_PRICE": 1,
+      "NON_POSITIVE_QUANTITY": 2,
+      "NOT_COMPLETED": 30,
+      "TRUSTED": 197,
+      "UNMAPPED_STATUS": 1,
+      "UNSUPPORTED_CURRENCY": 1
+    },
+    "raw_rows": 244
+  },
+  "evidence": {
+    "E-001": {
+      "allowed_text": "Trusted completed revenue for August is 180900000 INR paise.",
+      "pointer": "/monthly/0/revenue_paise",
+      "source_file": "results/kpis.json",
+      "unit": "INR paise",
+      "value": 180900000
+    },
+    "E-002": {
+      "allowed_text": "Trusted completed revenue for September is 113740000 INR paise.",
+      "pointer": "/monthly/1/revenue_paise",
+      "source_file": "results/kpis.json",
+      "unit": "INR paise",
+      "value": 113740000
+    }
+  },
+  "flip": {
+    "additional_september_inr_to_erase_conditional_gap": "646400",
+    "conditional_robustness": "drop_in_all_defined_scenarios",
+    "excluded_face_values_by_currency": [
+      {
+        "currency": "EUR",
+        "face_value": "6500",
+        "month": "2026-08"
+      },
+      {
+        "currency": "INR",
+        "face_value": "48800",
+        "month": "2026-08"
+      },
+      {
+        "currency": "INR",
+        "face_value": "10600",
+        "month": "unattributed"
+      }
+    ],
+    "foreign_currency": [
+      {
+        "break_even_inr_per_unit": null,
+        "currency": "EUR",
+        "face_value": "6500",
+        "interpretation": "No nonnegative rate reverses the baseline decline; this adds August revenue.",
+        "month": "2026-08"
+      }
+    ],
+    "invalid_date_positive_known_currency_paise": 1060000,
+    "known_currency_conditional_max_change_paise": -64640000,
+    "known_currency_conditional_min_change_paise": -72880000,
+    "materiality_percent": 10,
+    "scope": "Conditional on supplied positive amounts and possible key/status/date repairs. Exact duplicates never reinstated; conflict chooses at most one version. Non-positive amounts cannot be repaired. Unknown-currency amounts are separate, not INR. Arbitrary corrected prices or new transactions are outside these bounds.",
+    "trusted_gap_inr": "671600",
+    "unconditional_bounds": null
+  },
+  "kpis": {
+    "cohorts": [
+      {
+        "cohort": "new",
+        "customers": 64,
+        "order_month": "2026-08",
+        "orders": 66,
+        "revenue_paise": 61490000
+      },
+      {
+        "cohort": "repeat",
+        "customers": 36,
+        "order_month": "2026-08",
+        "orders": 47,
+        "revenue_paise": 119410000
+      },
+      {
+        "cohort": "new",
+        "customers": 10,
+        "order_month": "2026-09",
+        "orders": 10,
+        "revenue_paise": 16160000
+      },
+      {
+        "cohort": "repeat",
+        "customers": 44,
+        "order_month": "2026-09",
+        "orders": 74,
+        "revenue_paise": 97580000
+      }
+    ],
+    "monthly": [
+      {
+        "change_paise": null,
+        "order_month": "2026-08",
+        "orders": 113,
+        "revenue_paise": 180900000
+      },
+      {
+        "change_paise": -67160000,
+        "order_month": "2026-09",
+        "orders": 84,
+        "revenue_paise": 113740000
+      }
+    ],
+    "monthly_products": [
+      {
+        "category": "Computers",
+        "order_month": "2026-08",
+        "product_id": "P010",
+        "product_name": "Laptop 16",
+        "rank": 1,
+        "revenue_paise": 93600000
+      },
+      {
+        "category": "Computers",
+        "order_month": "2026-08",
+        "product_id": "P001",
+        "product_name": "Laptop 14",
+        "rank": 2,
+        "revenue_paise": 20000000
+      },
+      {
+        "category": "Storage",
+        "order_month": "2026-08",
+        "product_id": "P011",
+        "product_name": "HDD 4TB",
+        "rank": 3,
+        "revenue_paise": 13940000
+      },
+      {
+        "category": "Displays",
+        "order_month": "2026-08",
+        "product_id": "P004",
+        "product_name": "24in Monitor",
+        "rank": 4,
+        "revenue_paise": 13000000
+      },
+      {
+        "category": "Accessories",
+        "order_month": "2026-08",
+        "product_id": "P002",
+        "product_name": "USB-C Dock",
+        "rank": 5,
+        "revenue_paise": 9750000
+      },
+      {
+        "category": "Printers",
+        "order_month": "2026-08",
+        "product_id": "P012",
+        "product_name": "Printer",
+        "rank": 6,
+        "revenue_paise": 9000000
+      },
+      {
+        "category": "Storage",
+        "order_month": "2026-08",
+        "product_id": "P003",
+        "product_name": "SSD 1TB",
+        "rank": 7,
+        "revenue_paise": 7800000
+      },
+      {
+        "category": "Networking",
+        "order_month": "2026-08",
+        "product_id": "P009",
+        "product_name": "Router",
+        "rank": 8,
+        "revenue_paise": 6700000
+      },
+      {
+        "category": "Audio",
+        "order_month": "2026-08",
+        "product_id": "P006",
+        "product_name": "Headset",
+        "rank": 9,
+        "revenue_paise": 2640000
+      },
+      {
+        "category": "Accessories",
+        "order_month": "2026-08",
+        "product_id": "P007",
+        "product_name": "Keyboard",
+        "rank": 10,
+        "revenue_paise": 1760000
+      },
+      {
+        "category": "Computers",
+        "order_month": "2026-09",
+        "product_id": "P001",
+        "product_name": "Laptop 14",
+        "rank": 1,
+        "revenue_paise": 45000000
+      },
+      {
+        "category": "Computers",
+        "order_month": "2026-09",
+        "product_id": "P010",
+        "product_name": "Laptop 16",
+        "rank": 2,
+        "revenue_paise": 14400000
+      },
+      {
+        "category": "Printers",
+        "order_month": "2026-09",
+        "product_id": "P012",
+        "product_name": "Printer",
+        "rank": 3,
+        "revenue_paise": 13500000
+      },
+      {
+        "category": "Accessories",
+        "order_month": "2026-09",
+        "product_id": "P002",
+        "product_name": "USB-C Dock",
+        "rank": 4,
+        "revenue_paise": 10500000
+      },
+      {
+        "category": "Storage",
+        "order_month": "2026-09",
+        "product_id": "P011",
+        "product_name": "HDD 4TB",
+        "rank": 5,
+        "revenue_paise": 9840000
+      },
+      {
+        "category": "Storage",
+        "order_month": "2026-09",
+        "product_id": "P003",
+        "product_name": "SSD 1TB",
+        "rank": 6,
+        "revenue_paise": 5850000
+      },
+      {
+        "category": "Displays",
+        "order_month": "2026-09",
+        "product_id": "P004",
+        "product_name": "24in Monitor",
+        "rank": 7,
+        "revenue_paise": 5200000
+      },
+      {
+        "category": "Audio",
+        "order_month": "2026-09",
+        "product_id": "P006",
+        "product_name": "Headset",
+        "rank": 8,
+        "revenue_paise": 3740000
+      },
+      {
+        "category": "Accessories",
+        "order_month": "2026-09",
+        "product_id": "P007",
+        "product_name": "Keyboard",
+        "rank": 9,
+        "revenue_paise": 1760000
+      },
+      {
+        "category": "Accessories",
+        "order_month": "2026-09",
+        "product_id": "P005",
+        "product_name": "Wireless Mouse",
+        "rank": 10,
+        "revenue_paise": 1350000
+      }
+    ],
+    "top_products": [
+      {
+        "category": "Computers",
+        "product_id": "P010",
+        "product_name": "Laptop 16",
+        "revenue_paise": 108000000
+      },
+      {
+        "category": "Computers",
+        "product_id": "P001",
+        "product_name": "Laptop 14",
+        "revenue_paise": 65000000
+      },
+      {
+        "category": "Storage",
+        "product_id": "P011",
+        "product_name": "HDD 4TB",
+        "revenue_paise": 23780000
+      },
+      {
+        "category": "Printers",
+        "product_id": "P012",
+        "product_name": "Printer",
+        "revenue_paise": 22500000
+      },
+      {
+        "category": "Accessories",
+        "product_id": "P002",
+        "product_name": "USB-C Dock",
+        "revenue_paise": 20250000
+      },
+      {
+        "category": "Displays",
+        "product_id": "P004",
+        "product_name": "24in Monitor",
+        "revenue_paise": 18200000
+      },
+      {
+        "category": "Storage",
+        "product_id": "P003",
+        "product_name": "SSD 1TB",
+        "revenue_paise": 13650000
+      },
+      {
+        "category": "Networking",
+        "product_id": "P009",
+        "product_name": "Router",
+        "revenue_paise": 8050000
+      },
+      {
+        "category": "Audio",
+        "product_id": "P006",
+        "product_name": "Headset",
+        "revenue_paise": 6380000
+      },
+      {
+        "category": "Accessories",
+        "product_id": "P007",
+        "product_name": "Keyboard",
+        "revenue_paise": 3520000
+      }
+    ]
+  },
+  "rejections": [
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "4800",
+      "order_month": "2026-08",
+      "reason_code": "INVALID_CUSTOMER_KEY",
+      "source_row_number": 4
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "4400",
+      "order_month": "2026-08",
+      "reason_code": "CONFLICTING_DUPLICATE",
+      "source_row_number": 6
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "2700",
+      "order_month": "2026-08",
+      "reason_code": "UNMAPPED_STATUS",
+      "source_row_number": 7
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "0",
+      "order_month": "2026-08",
+      "reason_code": "NON_POSITIVE_PRICE",
+      "source_row_number": 13
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "1600",
+      "order_month": "unattributed",
+      "reason_code": "INVALID_DATE",
+      "source_row_number": 69
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "0",
+      "order_month": "2026-08",
+      "reason_code": "NON_POSITIVE_QUANTITY",
+      "source_row_number": 79
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "6500",
+      "order_month": "2026-08",
+      "reason_code": "INVALID_CUSTOMER_KEY",
+      "source_row_number": 81
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "13000",
+      "order_month": "2026-08",
+      "reason_code": "INVALID_CUSTOMER_KEY",
+      "source_row_number": 93
+    },
+    {
+      "bucket": "rejected",
+      "currency": "EUR",
+      "face_value": "6500",
+      "order_month": "2026-08",
+      "reason_code": "UNSUPPORTED_CURRENCY",
+      "source_row_number": 97
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "13000",
+      "order_month": "2026-08",
+      "reason_code": "INVALID_PRODUCT_KEY",
+      "source_row_number": 123
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "-6500",
+      "order_month": "2026-08",
+      "reason_code": "NON_POSITIVE_QUANTITY",
+      "source_row_number": 125
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "9000",
+      "order_month": "unattributed",
+      "reason_code": "INVALID_DATE",
+      "source_row_number": 187
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "2200",
+      "order_month": "2026-08",
+      "reason_code": "INVALID_PRODUCT_KEY",
+      "source_row_number": 212
+    },
+    {
+      "bucket": "rejected",
+      "currency": "INR",
+      "face_value": "2200",
+      "order_month": "2026-08",
+      "reason_code": "CONFLICTING_DUPLICATE",
+      "source_row_number": 216
+    }
+  ],
+  "sensitivity": [
+    {
+      "august_paise": 180900000,
+      "change_paise": -67160000,
+      "change_percent": -37.12548369264787,
+      "conditional": false,
+      "id": "baseline",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 181120000,
+      "change_paise": -67380000,
+      "change_percent": -37.20185512367491,
+      "conditional": false,
+      "id": "conflict_low",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 181340000,
+      "change_paise": -67600000,
+      "change_percent": -37.27804124848351,
+      "conditional": false,
+      "id": "conflict_high",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 183330000,
+      "change_paise": -69590000,
+      "change_percent": -37.95887197949054,
+      "conditional": false,
+      "id": "accept_customer",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 182420000,
+      "change_paise": -68680000,
+      "change_percent": -37.64938055037825,
+      "conditional": false,
+      "id": "accept_product",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 179440000,
+      "change_paise": -65700000,
+      "change_percent": -36.61390994204191,
+      "conditional": false,
+      "id": "reject_slash",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 181170000,
+      "change_paise": -67430000,
+      "change_percent": -37.21918639951427,
+      "conditional": false,
+      "id": "map_status",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 181550000,
+      "change_paise": -67810000,
+      "change_percent": -37.350592123381986,
+      "conditional": true,
+      "id": "unsupported_face_only",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 186620000,
+      "change_paise": -72880000,
+      "change_percent": -39.052620297931625,
+      "conditional": true,
+      "id": "combined_favour_august_known_currency",
+      "september_paise": 113740000
+    },
+    {
+      "august_paise": 179440000,
+      "change_paise": -64640000,
+      "change_percent": -36.023183236736514,
+      "conditional": true,
+      "id": "combined_favour_september_known_currency",
+      "september_paise": 114800000
+    }
+  ],
+  "summary": "# Executive summary\n\n**Finding 1:** Trusted completed revenue fell from INR 1,809,000.00 in August to INR 1,137,400.00 in September, a change of -37.13%. The retained orders support a decline within the supplied exports. This is an observation about the accepted records, not proof of a particular business cause. Cancelled and refunded orders do not contribute revenue, and dollar orders use Finance's supplied conversion assumption.\n\n**Finding 2:** The trusted dataset contains 113 August orders and 84 September orders. Every source row has an explicit disposition. Identical copies are removed, while conflicting versions are withheld together rather than selecting a convenient price. The reconciliation shows the adjustments needed to reach trusted revenue. Independent SQL and pandas calculations agree on monthly revenue, leading products and customer contribution.\n\n**Uncertainty:** Excluded records can change the comparison. Unsupported currencies have no approved conversion rate, and invalid dates cannot reliably be assigned to a month. Conditional sensitivity scenarios are not unconditional bounds. New and repeat customer labels describe only this available window, not lifetime customer tenure.\n\n**Next action:** Ask Finance to resolve conflicting order versions and unsupported currency treatment, then rerun the same checks before making a business decision. Review the rejection log alongside the trusted figures; do not infer promotions, outages or other causes from these exports alone.\n",
+  "waterfall": {
+    "2026-08": {
+      "deltas": {
+        "CONFLICTING_DUPLICATE": "-6600",
+        "EXACT_DUPLICATE_REMOVED": "-25400",
+        "INVALID_CUSTOMER_KEY": "-24300",
+        "INVALID_PRODUCT_KEY": "-15200",
+        "NON_POSITIVE_PRICE": "0",
+        "NON_POSITIVE_QUANTITY": "6500",
+        "UNMAPPED_STATUS": "-2700",
+        "UNSUPPORTED_CURRENCY": "-6500",
+        "USD_CONVERSION_EFFECT": "8400"
+      },
+      "naive_mixed_currency_face_value": "1874800",
+      "trusted_inr": "1809000",
+      "trusted_row_share": 0.889763779527559,
+      "warning": "Face values mix currencies; ratio is not monetary coverage."
+    },
+    "2026-09": {
+      "deltas": {
+        "USD_CONVERSION_EFFECT": "0"
+      },
+      "naive_mixed_currency_face_value": "1137400",
+      "trusted_inr": "1137400",
+      "trusted_row_share": 1.0,
+      "warning": "Face values mix currencies; ratio is not monetary coverage."
+    }
+  }
+}

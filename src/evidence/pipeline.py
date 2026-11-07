@@ -120,6 +120,7 @@ def classify(orders, customers, products, overrides=None):
             if scaled != scaled.to_integral_value():
                 raise ValueError('Sub-paise precision requires an explicit rounding decision')
             r['revenue_paise'] = int(scaled)
+        r['reason_text'] = r['reason_code'].replace('_', ' ').capitalize()
         output.append(r)
     return output
 
@@ -129,11 +130,19 @@ def totals(rows):
 def run():
     results = ROOT / 'results'
     results.mkdir(exist_ok=True)
+    hashes_path = ROOT / 'data/raw.sha256'
+    actual_inputs = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT/'data/raw').glob('*.csv'))}
+    if hashes_path.exists() and json.loads(hashes_path.read_text()) != actual_inputs:
+        raise ValueError('Raw input integrity check failed; review changed source files explicitly.')
     tables = {name: read_csv(ROOT / 'data/raw' / (name + '.csv')) for name in ('orders', 'customers', 'products')}
+    for table, key in (('customers', 'customer_id'), ('products', 'product_id')):
+        identifiers = [r[key] for r in tables[table]]
+        if len(set(identifiers)) != len(identifiers) or any(not x.strip() for x in identifiers):
+            raise ValueError('Master keys must be unique and nonblank: ' + table)
     write_json(results / 'data_health.json', profile(tables))
     rows = classify(tables['orders'], {r['customer_id'] for r in tables['customers']}, {r['product_id'] for r in tables['products']})
     clean = [r for r in rows if r['bucket'] == 'clean']
-    fields = list(tables['orders'][0]) + ['source_row_number', 'normalized_date', 'order_month', 'bucket', 'reason_code', 'all_reasons', 'flags', 'face_value', 'revenue_paise']
+    fields = list(tables['orders'][0]) + ['source_row_number', 'normalized_date', 'order_month', 'bucket', 'reason_code', 'reason_text', 'all_reasons', 'flags', 'face_value', 'revenue_paise']
     export_csv(ROOT / 'clean_orders.csv', clean, fields)
     export_csv(ROOT / 'rejected_orders.csv', [r for r in rows if r['bucket'] != 'clean'], fields)
     write_json(results / 'decisions.json', {'buckets': dict(Counter(r['bucket'] for r in rows)), 'primary_reasons': dict(Counter(r['reason_code'] for r in rows)), 'raw_rows': len(rows)})
@@ -190,7 +199,9 @@ def run():
     generate(ROOT, kpis, scenarios, rows)
     from .ai import generate as generate_ai
     generate_ai(ROOT, kpis)
+    from .export import export
+    export(ROOT, rows)
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT / 'data/raw').glob('*.csv'))}
     write_json(ROOT / 'data/raw.sha256', hashes)
-    write_json(results / 'manifest.json', {'inputs': hashes, 'pandas_version': pd.__version__, 'output_hashes': {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(results.glob('*.json')) if p.name != 'manifest.json'}})
+    write_json(results / 'manifest.json', {'inputs': hashes, 'pandas_version': pd.__version__, 'rules_code_hash': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), 'output_hashes': {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(results.glob('*.json')) if p.name != 'manifest.json'}})
     print(json.dumps({'buckets': dict(Counter(r['bucket'] for r in rows)), 'monthly_paise': independent, 'parity': 'passed'}, indent=2))

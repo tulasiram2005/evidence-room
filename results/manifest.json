@@ -15,7 +15,10 @@
     "kpis.json": "f758451194ee4ffb75820415ffc43e936c52500e2d5fdc2fc9571421d84f5b21",
     "parity.json": "70a74d657dcd39065b44be4af2893317eff3fbcae57a11c3f8b893d77fb6e23d",
     "sensitivity.json": "34e775656c26eeab474dbe8af5e4e3d6c38754dfb6d3da25439b99601825c1d0",
+    "test_report.json": "35d5aceed7a80291f73156ef00a17195b3ead8e556b500f0ee7eba3cc857ee7e",
+    "ui.json": "3890988a956645840374eae5addca92a81f2332d20374ec5877f12ea4f2a194b",
     "waterfall.json": "353d2c8a83136e43fcb2f1de272873f34de399f28eedde0da821dde519e9ba2d"
   },
-  "pandas_version": "2.3.3"
+  "pandas_version": "3.0.0",
+  "rules_code_hash": "ea0f9d7d12e82680e316aaed081354838f18e54ccacc1cb20dde850332a75aa3"
 }

@@ -1,0 +1,17 @@
+{
+  "checks": [],
+  "externalRequests": [],
+  "consoleErrors": [],
+  "axe": [],
+  "screenshots": [],
+  "passed": false,
+  "failure": "Error: browserType.launch: Target page, context or browser has been closed",
+  "manual_browser_checks": {
+    "scenario_reject_slash": "observed -36.61%",
+    "invalid_date_filter": "observed two receipts",
+    "theme_switch": "both themes visually inspected",
+    "automated_axe": "not measured",
+    "lighthouse": "not measured",
+    "full_matrix": "not captured"
+  }
+}
