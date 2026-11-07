@@ -17,7 +17,7 @@
 - Private GitHub repository backed up; no cloud runtime or paid service enabled.
 
 - Hypothesis suite: two properties with 100 generated cases each.
-- 39 tests passed; local security scans passed after isolated toolchain upgrades.
+- 46 tests passed; local security scans passed after isolated toolchain upgrades.
 
 - Baseline plus three design revisions passed: 320 screenshots; eight theme/viewport combinations per run; no reported axe violations, console errors or external requests.
 - Local Lighthouse: performance 100, accessibility 100, best practices 100, SEO 82. Meta description and robots.txt fixes build successfully; their effect has not been remeasured.
@@ -25,7 +25,7 @@
 
 ## Not yet fulfilled from the expanded master prompt
 - Hosted CI execution and remaining SQL lint/type gates. Python transitive lock, local Ruff/Bandit/pip-audit and TypeScript build checks are implemented.
-- Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Native model-directed function calling and live validation remain pending.
+- Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Bounded Gemini native function calling is implemented with preserved call IDs/signatures, strict tool validation, three rounds/eight calls maximum, and fallback tests. Live provider validation remains unmeasured.
 - The complete custom design specification (fonts, every-number evidence drawers,
   animated waterfall/bounds visuals, copy controls and shortcut sheet).
 - Cloudflare/Vercel deployment and verified account allowance/response headers.

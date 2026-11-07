@@ -22,8 +22,11 @@ for entry in objects:
  content=subprocess.check_output(['git','cat-file','blob',sha],cwd=ROOT).decode('utf-8',errors='replace')
  for label,pattern in patterns.items():
   if re.search(pattern,content):
-   if name == 'tools/publication_check.py' and label == 'absolute_home_path' and content.count('/Users/') == 1 and "r'/Users/[^/\\s]+/'" in content:
-    continue  # The scanner's literal detection regex, not a real user path.
+   if name in ('tools/publication_check.py', 'tools/build_gate.py') and label == 'absolute_home_path':
+    # Remove only exact regex literals; any real home path still fails.
+    remaining = content.replace(chr(92) * 2, chr(92)).replace('/Users/[^/\\s]+/', '').replace('/Users/[a-zA-Z][^/]+/', '')
+    if not re.search(pattern, remaining):
+     continue
    findings.append({'file':name,'kind':label,'object':sha})
 report={'history_blobs_scanned':count,'findings':findings,'passed':not findings,'scope':'Pattern scan only, not proof that all sensitive data is absent.'}
 (ROOT/'results/publication_check.json').write_text(json.dumps(report,indent=2)+'\n')

@@ -16,3 +16,6 @@ responses; no live model use is claimed. A security scanner identified Python
 assertions that could disappear under optimized execution; explicit ValueError
 checks replaced them. Dependency auditing identified old pip/setuptools in the
 isolated environment; those tools were upgraded locally, not system-wide.
+
+## Native transport implementation (2026-11-07)
+Gemini function calling was implemented against the official API guide (https://ai.google.dev/gemini-api/docs/function-calling). Seven additional offline tests exercise the native loop, argument rejection, call/round limits, signature and ID preservation, claim checking and fallback. These tests use simulated transports, not a live model. The submitted analysis still uses the deterministic mock. Opt-in command: `python tools/draft_ai.py --gemini --native-tools`; credentials remain environment-only and free-tier confirmation is required.

@@ -9,6 +9,7 @@ import urllib.request
 from datetime import datetime, timezone
 from .ai_tools import EvidenceTools
 from .verify import verify
+from .native_tools import generate
 
 class ProviderFailure(Exception):
     pass
@@ -36,7 +37,7 @@ def post(url, payload, headers, attempts=3):
             raise ProviderFailure('Provider unavailable or invalid JSON') from None
     raise ProviderFailure('Retries exhausted')
 
-def draft(root, *, allow_gemini=False, allow_ollama=False, transport=post):
+def draft(root, *, allow_gemini=False, allow_ollama=False, native_tools=False, transport=post):
     tools = EvidenceTools(root)
     monthly = tools.call('get_monthly_revenue', {})
     baseline = json.loads((root/'results/ai_claims.json').read_text())
@@ -46,12 +47,14 @@ def draft(root, *, allow_gemini=False, allow_ollama=False, transport=post):
               +json.dumps({'example':baseline, 'aggregate_tool_results':monthly, 'evidence':evidence},sort_keys=True))
     fingerprint = hashlib.sha256(prompt.encode()).hexdigest()
     cache = root/'results/provider_run.json'
-    configuration = {'gemini':allow_gemini,'ollama':allow_ollama,'gemini_model':os.getenv('GEMINI_MODEL'), 'ollama_model':os.getenv('OLLAMA_MODEL')}
+    configuration = {'native_tools':native_tools,'gemini':allow_gemini,'ollama':allow_ollama,'gemini_model':os.getenv('GEMINI_MODEL'), 'ollama_model':os.getenv('OLLAMA_MODEL')}
     if cache.exists():
         previous=json.loads(cache.read_text())
         if previous.get('prompt_hash')==fingerprint and previous.get('configuration')==configuration and previous.get('provider')!='deterministic_mock':
-            verify(previous['response'],evidence)
-            return previous
+            cached_checks = verify(previous['response'],evidence)
+            if cached_checks and all(c['verdict']=='verified' for c in cached_checks):
+                return previous
+    tool_trace=[]
     failures=[]
     candidates=[]
     if allow_gemini:
@@ -68,16 +71,21 @@ def draft(root, *, allow_gemini=False, allow_ollama=False, transport=post):
     provider, model, response='deterministic_mock',None,baseline
     for name, model_name, url, payload, headers in candidates:
         try:
-            reply=transport(url,payload,headers)
-            content=''.join(p.get('text','') for p in reply['candidates'][0]['content']['parts']) if name=='gemini' else reply['message']['content']
-            candidate=json.loads(content)
+            candidate_trace=[]
+            if name=='gemini' and native_tools:
+                candidate,candidate_trace=generate(url,payload,headers,transport,tools)
+            else:
+                reply=transport(url,payload,headers)
+                content=''.join(p.get('text','') for p in reply['candidates'][0]['content']['parts']) if name=='gemini' else reply['message']['content']
+                candidate=json.loads(content)
             checks=verify(candidate,evidence)
             if not checks or any(c['verdict']!='verified' for c in checks):
                 raise ProviderFailure('Draft failed claim verification')
+            tool_trace=candidate_trace
             provider,model,response=name,model_name,candidate
             break
         except (ProviderFailure,ValueError,KeyError,IndexError,TypeError):
             failures.append({'provider':name,'reason':'Unavailable, malformed or unverified response; fallback used'})
-    result={'provider':provider,'model':model,'prompt_hash':fingerprint,'prompt':prompt,'configuration':configuration,'timestamp_utc':datetime.now(timezone.utc).isoformat(),'response':response,'claim_checks':verify(response,evidence),'failures':failures,'mode':'aggregate-grounded JSON; native model-directed tool calls not enabled'}
+    result={'provider':provider,'model':model,'prompt_hash':fingerprint,'prompt':prompt,'configuration':configuration,'timestamp_utc':datetime.now(timezone.utc).isoformat(),'response':response,'claim_checks':verify(response,evidence),'failures':failures,'tool_trace':tool_trace,'mode':'native aggregate tools' if provider=='gemini' and native_tools else 'aggregate-grounded JSON'}
     cache.write_text(json.dumps(result,indent=2)+'\n')
     return result

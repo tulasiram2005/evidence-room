@@ -33,3 +33,24 @@ class ProviderTests(unittest.TestCase):
         self.assertEqual(len(result['failures']),1)
     def test_arbitrary_endpoint_rejected(self):
         with self.assertRaises(ProviderFailure): post('https://example.com',{}, {})
+
+    def test_native_gemini_claim_verification(self):
+        expected=json.loads((self.root/'results/ai_claims.json').read_text())
+        calls=[]
+        def transport(url,payload,headers):
+            calls.append(payload)
+            if len(calls)==1:
+                return {'candidates':[{'content':{'role':'model','parts':[{'functionCall':{'name':'get_monthly_revenue','args':{}}}]}}]}
+            return {'candidates':[{'content':{'parts':[{'text':json.dumps(expected)}]}}]}
+        with patch.dict(os.environ,{'GEMINI_API_KEY':'test','GEMINI_MODEL':'gemini-test-flash','GEMINI_FREE_TIER_CONFIRMED':'yes'}):
+            result=draft(self.root,allow_gemini=True,native_tools=True,transport=transport)
+        self.assertEqual(result['provider'],'gemini')
+        self.assertEqual(len(result['tool_trace']),1)
+        self.assertTrue(all(c['verdict']=='verified' for c in result['claim_checks']))
+
+    def test_native_unknown_tool_falls_back(self):
+        def transport(*args):
+            return {'candidates':[{'content':{'parts':[{'functionCall':{'name':'execute_sql','args':{}}}]}}]}
+        with patch.dict(os.environ,{'GEMINI_API_KEY':'test','GEMINI_MODEL':'gemini-test-flash','GEMINI_FREE_TIER_CONFIRMED':'yes'}):
+            result=draft(self.root,allow_gemini=True,native_tools=True,transport=transport)
+        self.assertEqual(result['provider'],'deterministic_mock')
