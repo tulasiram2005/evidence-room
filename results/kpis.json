@@ -1,0 +1,270 @@
+{
+  "cohorts": [
+    {
+      "cohort": "new",
+      "customers": 64,
+      "order_month": "2026-08",
+      "orders": 66,
+      "revenue_paise": 61490000
+    },
+    {
+      "cohort": "repeat",
+      "customers": 36,
+      "order_month": "2026-08",
+      "orders": 47,
+      "revenue_paise": 119410000
+    },
+    {
+      "cohort": "new",
+      "customers": 10,
+      "order_month": "2026-09",
+      "orders": 10,
+      "revenue_paise": 16160000
+    },
+    {
+      "cohort": "repeat",
+      "customers": 44,
+      "order_month": "2026-09",
+      "orders": 74,
+      "revenue_paise": 97580000
+    }
+  ],
+  "monthly": [
+    {
+      "change_paise": null,
+      "order_month": "2026-08",
+      "orders": 113,
+      "revenue_paise": 180900000
+    },
+    {
+      "change_paise": -67160000,
+      "order_month": "2026-09",
+      "orders": 84,
+      "revenue_paise": 113740000
+    }
+  ],
+  "monthly_products": [
+    {
+      "category": "Computers",
+      "order_month": "2026-08",
+      "product_id": "P010",
+      "product_name": "Laptop 16",
+      "rank": 1,
+      "revenue_paise": 93600000
+    },
+    {
+      "category": "Computers",
+      "order_month": "2026-08",
+      "product_id": "P001",
+      "product_name": "Laptop 14",
+      "rank": 2,
+      "revenue_paise": 20000000
+    },
+    {
+      "category": "Storage",
+      "order_month": "2026-08",
+      "product_id": "P011",
+      "product_name": "HDD 4TB",
+      "rank": 3,
+      "revenue_paise": 13940000
+    },
+    {
+      "category": "Displays",
+      "order_month": "2026-08",
+      "product_id": "P004",
+      "product_name": "24in Monitor",
+      "rank": 4,
+      "revenue_paise": 13000000
+    },
+    {
+      "category": "Accessories",
+      "order_month": "2026-08",
+      "product_id": "P002",
+      "product_name": "USB-C Dock",
+      "rank": 5,
+      "revenue_paise": 9750000
+    },
+    {
+      "category": "Printers",
+      "order_month": "2026-08",
+      "product_id": "P012",
+      "product_name": "Printer",
+      "rank": 6,
+      "revenue_paise": 9000000
+    },
+    {
+      "category": "Storage",
+      "order_month": "2026-08",
+      "product_id": "P003",
+      "product_name": "SSD 1TB",
+      "rank": 7,
+      "revenue_paise": 7800000
+    },
+    {
+      "category": "Networking",
+      "order_month": "2026-08",
+      "product_id": "P009",
+      "product_name": "Router",
+      "rank": 8,
+      "revenue_paise": 6700000
+    },
+    {
+      "category": "Audio",
+      "order_month": "2026-08",
+      "product_id": "P006",
+      "product_name": "Headset",
+      "rank": 9,
+      "revenue_paise": 2640000
+    },
+    {
+      "category": "Accessories",
+      "order_month": "2026-08",
+      "product_id": "P007",
+      "product_name": "Keyboard",
+      "rank": 10,
+      "revenue_paise": 1760000
+    },
+    {
+      "category": "Computers",
+      "order_month": "2026-09",
+      "product_id": "P001",
+      "product_name": "Laptop 14",
+      "rank": 1,
+      "revenue_paise": 45000000
+    },
+    {
+      "category": "Computers",
+      "order_month": "2026-09",
+      "product_id": "P010",
+      "product_name": "Laptop 16",
+      "rank": 2,
+      "revenue_paise": 14400000
+    },
+    {
+      "category": "Printers",
+      "order_month": "2026-09",
+      "product_id": "P012",
+      "product_name": "Printer",
+      "rank": 3,
+      "revenue_paise": 13500000
+    },
+    {
+      "category": "Accessories",
+      "order_month": "2026-09",
+      "product_id": "P002",
+      "product_name": "USB-C Dock",
+      "rank": 4,
+      "revenue_paise": 10500000
+    },
+    {
+      "category": "Storage",
+      "order_month": "2026-09",
+      "product_id": "P011",
+      "product_name": "HDD 4TB",
+      "rank": 5,
+      "revenue_paise": 9840000
+    },
+    {
+      "category": "Storage",
+      "order_month": "2026-09",
+      "product_id": "P003",
+      "product_name": "SSD 1TB",
+      "rank": 6,
+      "revenue_paise": 5850000
+    },
+    {
+      "category": "Displays",
+      "order_month": "2026-09",
+      "product_id": "P004",
+      "product_name": "24in Monitor",
+      "rank": 7,
+      "revenue_paise": 5200000
+    },
+    {
+      "category": "Audio",
+      "order_month": "2026-09",
+      "product_id": "P006",
+      "product_name": "Headset",
+      "rank": 8,
+      "revenue_paise": 3740000
+    },
+    {
+      "category": "Accessories",
+      "order_month": "2026-09",
+      "product_id": "P007",
+      "product_name": "Keyboard",
+      "rank": 9,
+      "revenue_paise": 1760000
+    },
+    {
+      "category": "Accessories",
+      "order_month": "2026-09",
+      "product_id": "P005",
+      "product_name": "Wireless Mouse",
+      "rank": 10,
+      "revenue_paise": 1350000
+    }
+  ],
+  "top_products": [
+    {
+      "category": "Computers",
+      "product_id": "P010",
+      "product_name": "Laptop 16",
+      "revenue_paise": 108000000
+    },
+    {
+      "category": "Computers",
+      "product_id": "P001",
+      "product_name": "Laptop 14",
+      "revenue_paise": 65000000
+    },
+    {
+      "category": "Storage",
+      "product_id": "P011",
+      "product_name": "HDD 4TB",
+      "revenue_paise": 23780000
+    },
+    {
+      "category": "Printers",
+      "product_id": "P012",
+      "product_name": "Printer",
+      "revenue_paise": 22500000
+    },
+    {
+      "category": "Accessories",
+      "product_id": "P002",
+      "product_name": "USB-C Dock",
+      "revenue_paise": 20250000
+    },
+    {
+      "category": "Displays",
+      "product_id": "P004",
+      "product_name": "24in Monitor",
+      "revenue_paise": 18200000
+    },
+    {
+      "category": "Storage",
+      "product_id": "P003",
+      "product_name": "SSD 1TB",
+      "revenue_paise": 13650000
+    },
+    {
+      "category": "Networking",
+      "product_id": "P009",
+      "product_name": "Router",
+      "revenue_paise": 8050000
+    },
+    {
+      "category": "Audio",
+      "product_id": "P006",
+      "product_name": "Headset",
+      "revenue_paise": 6380000
+    },
+    {
+      "category": "Accessories",
+      "product_id": "P007",
+      "product_name": "Keyboard",
+      "revenue_paise": 3520000
+    }
+  ]
+}

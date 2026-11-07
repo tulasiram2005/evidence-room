@@ -1,0 +1,66 @@
+[
+  {
+    "august_paise": 180900000,
+    "change_paise": -67160000,
+    "change_percent": -37.12548369264787,
+    "conditional": false,
+    "id": "baseline",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 181120000,
+    "change_paise": -67380000,
+    "change_percent": -37.20185512367491,
+    "conditional": false,
+    "id": "conflict_low",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 181340000,
+    "change_paise": -67600000,
+    "change_percent": -37.27804124848351,
+    "conditional": false,
+    "id": "conflict_high",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 183330000,
+    "change_paise": -69590000,
+    "change_percent": -37.95887197949054,
+    "conditional": false,
+    "id": "accept_customer",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 182420000,
+    "change_paise": -68680000,
+    "change_percent": -37.64938055037825,
+    "conditional": false,
+    "id": "accept_product",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 179440000,
+    "change_paise": -65700000,
+    "change_percent": -36.61390994204191,
+    "conditional": false,
+    "id": "reject_slash",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 181170000,
+    "change_paise": -67430000,
+    "change_percent": -37.21918639951427,
+    "conditional": false,
+    "id": "map_status",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 181550000,
+    "change_paise": -67810000,
+    "change_percent": -37.350592123381986,
+    "conditional": true,
+    "id": "unsupported_face_only",
+    "september_paise": 113740000
+  }
+]

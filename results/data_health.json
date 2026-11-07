@@ -1,0 +1,67 @@
+{
+  "customers": {
+    "blank_cells": {
+      "customer_id": 0,
+      "customer_name": 0,
+      "region": 0
+    },
+    "columns": [
+      "customer_id",
+      "customer_name",
+      "region"
+    ],
+    "repeated_key_groups": 0,
+    "rows": 80
+  },
+  "orders": {
+    "blank_cells": {
+      "currency": 0,
+      "customer_id": 2,
+      "order_date": 0,
+      "order_id": 0,
+      "product_id": 0,
+      "quantity": 0,
+      "status": 0,
+      "unit_price": 0
+    },
+    "columns": [
+      "order_id",
+      "order_date",
+      "customer_id",
+      "product_id",
+      "quantity",
+      "unit_price",
+      "currency",
+      "status"
+    ],
+    "currency_values": {
+      "EUR": 1,
+      "INR": 242,
+      "USD": 1
+    },
+    "invalid_dates": 2,
+    "repeated_key_groups": 4,
+    "rows": 244,
+    "status_values": {
+      " Completed ": 1,
+      "COMPLETE": 1,
+      "cancelled": 15,
+      "completed": 211,
+      "refunded": 16
+    }
+  },
+  "products": {
+    "blank_cells": {
+      "category": 0,
+      "product_id": 0,
+      "product_name": 0
+    },
+    "columns": [
+      "product_id",
+      "product_name",
+      "category"
+    ],
+    "repeated_key_groups": 0,
+    "rows": 12
+  }
+}

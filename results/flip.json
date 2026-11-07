@@ -1,0 +1,6 @@
+{
+  "materiality_percent": 10,
+  "reason": "Unsupported exchange rates and invalid dates prevent finite unconditional bounds. Face-value scenarios are conditional, not validated INR bounds.",
+  "trusted_gap_inr": "671600",
+  "unconditional_bounds": null
+}

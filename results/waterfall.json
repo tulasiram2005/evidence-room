@@ -1,0 +1,28 @@
+{
+  "2026-08": {
+    "deltas": {
+      "CONFLICTING_DUPLICATE": "-6600",
+      "EXACT_DUPLICATE_REMOVED": "-25400",
+      "INVALID_CUSTOMER_KEY": "-24300",
+      "INVALID_PRODUCT_KEY": "-15200",
+      "NON_POSITIVE_PRICE": "0",
+      "NON_POSITIVE_QUANTITY": "6500",
+      "UNMAPPED_STATUS": "-2700",
+      "UNSUPPORTED_CURRENCY": "-6500",
+      "USD_CONVERSION_EFFECT": "8400"
+    },
+    "naive_mixed_currency_face_value": "1874800",
+    "trusted_inr": "1809000",
+    "trusted_row_share": 0.889763779527559,
+    "warning": "Face values mix currencies; ratio is not monetary coverage."
+  },
+  "2026-09": {
+    "deltas": {
+      "USD_CONVERSION_EFFECT": "0"
+    },
+    "naive_mixed_currency_face_value": "1137400",
+    "trusted_inr": "1137400",
+    "trusted_row_share": 1.0,
+    "warning": "Face values mix currencies; ratio is not monetary coverage."
+  }
+}
