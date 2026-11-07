@@ -18,7 +18,7 @@ try{
   for(const theme of ['light','dark']){
    if(theme==='dark')await page.getByRole('button',{name:'Night desk',exact:true}).click();
    for(const section of await page.locator('main section').all()){
-    const id=await section.getAttribute('id');await section.scrollIntoViewIfNeeded();
+    const id=await section.getAttribute('id');await section.evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
     const file=`${out}/${width}-${height}-${theme}-${id}.png`;await page.screenshot({path:file});result.screenshots.push(file);
    }
    const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();

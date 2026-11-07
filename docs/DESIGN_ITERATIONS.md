@@ -43,3 +43,26 @@ and scenario screenshots before revision 2.
 5. Bounds caveat collapsed by default: show it expanded to avoid an overconfident reading.
 6. Tablet navigation targets small: give links 44px minimum height and allow sidebar scrolling.
 7. Product table units/ranking basis implicit: include both in its caption.
+
+Revision 2 recapture passed all eight configurations with 80 screenshots and no
+axe violations, console errors or external requests. Inspected dark tablet Trust
+and AI Claim Check screenshots.
+
+## Revision 3 — implemented, recapture pending
+1. Reconciliation totals lacked digit grouping: format the exact endpoint in INR.
+2. Face-value adjustments lacked grouping: group values without inventing currency conversion.
+3. Positive adjustment signs were implicit: explicitly render plus signs.
+4. Reconciliation row labels remained uppercase machine codes: readable text with exact code in title.
+5. AI claims showed only large paise integers: add a formatted rupee equivalent without altering original claims.
+6. Cohort customer counts could be summed incorrectly: clarify distinct counts and cross-group overlap.
+7. Screenshot scrolling centered tall sections and cut off headings: align each section to its start for consistent visual evidence.
+
+## Revision 3 verified
+User-run audit completed all eight configurations and 80 screenshots. Saved
+results/ui-iteration-3.json reports zero axe violations, console errors and
+external requests; scenario and filtering checks pass. Final dark tablet Trust
+screenshot inspected: formatted values, explicit signs and readable labels visible.
+
+Across baseline plus three revisions: 320 screenshots captured, 32 theme/viewport
+axe checks, and three implemented revision sets with at least five documented
+fixes each. These results do not establish human screen-reader acceptance.

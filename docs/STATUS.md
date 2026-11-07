@@ -22,8 +22,7 @@
 - Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Native model-directed function calling and live validation remain pending.
 - The complete custom design specification (fonts, every-number evidence drawers,
   animated waterfall/bounds visuals, copy controls and shortcut sheet).
-- Three screenshot-backed design iterations, complete viewport matrix, axe,
-  contrast-pair report, Lighthouse and captured zero-external-request audit.
+- Baseline and revision 1: complete viewport/theme matrix, axe and network audit passed. All three revision matrices now passed: 320 screenshots total including baseline. Lighthouse remains pending. Contrast passed for 17 configured pairs.
 - Cloudflare/Vercel deployment and verified account allowance/response headers.
 - Candidate's independent review, personalized explanation and actual submission.
 
