@@ -1,0 +1,126 @@
+{
+  "formula": "WCAG relative luminance; 4.5:1 threshold for normal text",
+  "pairs": [
+    {
+      "theme": "light",
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 16.157,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 7.353,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "blue",
+      "background": "canvas",
+      "ratio": 5.543,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "red",
+      "background": "canvas",
+      "ratio": 5.447,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 17.645,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 8.03,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "blue",
+      "background": "surface",
+      "ratio": 6.054,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "light",
+      "foreground": "red",
+      "background": "surface",
+      "ratio": 5.948,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "ink",
+      "background": "canvas",
+      "ratio": 15.863,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "muted",
+      "background": "canvas",
+      "ratio": 9.69,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "blue",
+      "background": "canvas",
+      "ratio": 8.696,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "red",
+      "background": "canvas",
+      "ratio": 8.802,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 14.774,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 9.025,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "blue",
+      "background": "surface",
+      "ratio": 8.099,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "red",
+      "background": "surface",
+      "ratio": 8.198,
+      "aa_normal_text": true
+    },
+    {
+      "theme": "both",
+      "foreground": "highlight_ink",
+      "background": "highlight",
+      "ratio": 16.127,
+      "aa_normal_text": true
+    }
+  ],
+  "passed": true,
+  "scope": "Configured token pairs; does not replace rendered axe checks."
+}
