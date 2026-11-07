@@ -30,3 +30,16 @@ Inspected baseline verdict, revenue and quarantine screenshots.
 5. Print button printed the entire investigation: restrict print output to the executive summary.
 6. Summary word-count evidence was absent: show actual generated text word count.
 No completed post-change audit or visual improvement is claimed until recapture.
+
+Revision 1 recapture passed: results/ui-iteration-1.json, 80 screenshots,
+zero axe violations, no console errors/external requests. Inspected tablet revenue
+and scenario screenshots before revision 2.
+
+## Revision 2 — implemented, recapture pending
+1. SVG data labels shrink on tablet: increase chart text from 14 to 18 SVG units.
+2. Table text forced to 12px at tablet: raise to 14px.
+3. Scenario options expose internal identifiers: use explicit decision descriptions.
+4. Scenario assumptions hidden below control: add persistent descriptive help and association.
+5. Bounds caveat collapsed by default: show it expanded to avoid an overconfident reading.
+6. Tablet navigation targets small: give links 44px minimum height and allow sidebar scrolling.
+7. Product table units/ranking basis implicit: include both in its caption.
