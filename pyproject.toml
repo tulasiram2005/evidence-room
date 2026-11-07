@@ -2,6 +2,6 @@
 name = "evidence-room"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = ["pandas==2.3.3"]
+dependencies = ["pandas==3.1.1"]
 [project.optional-dependencies]
 test = ["pytest==8.3.5", "hypothesis==6.131.9"]
