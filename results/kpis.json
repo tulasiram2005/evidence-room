@@ -29,6 +29,81 @@
       "revenue_paise": 97580000
     }
   ],
+  "exclusions": [
+    {
+      "order_month": "2026-08",
+      "reason_code": "CONFLICTING_DUPLICATE",
+      "rows": 2
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "EXACT_DUPLICATE_REMOVED",
+      "rows": 3
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "INVALID_CUSTOMER_KEY",
+      "rows": 3
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "INVALID_PRODUCT_KEY",
+      "rows": 2
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "NON_POSITIVE_PRICE",
+      "rows": 1
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "NON_POSITIVE_QUANTITY",
+      "rows": 2
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "NOT_COMPLETED",
+      "rows": 14
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "UNMAPPED_STATUS",
+      "rows": 1
+    },
+    {
+      "order_month": "2026-08",
+      "reason_code": "UNSUPPORTED_CURRENCY",
+      "rows": 1
+    },
+    {
+      "order_month": "2026-09",
+      "reason_code": "NOT_COMPLETED",
+      "rows": 16
+    },
+    {
+      "order_month": "unattributed",
+      "reason_code": "INVALID_DATE",
+      "rows": 2
+    }
+  ],
+  "health": [
+    {
+      "bucket": "clean",
+      "rows": 197
+    },
+    {
+      "bucket": "exact_duplicate_removed",
+      "rows": 3
+    },
+    {
+      "bucket": "not_completed",
+      "rows": 30
+    },
+    {
+      "bucket": "rejected",
+      "rows": 14
+    }
+  ],
   "monthly": [
     {
       "change_paise": null,
@@ -203,6 +278,29 @@
       "product_name": "Wireless Mouse",
       "rank": 10,
       "revenue_paise": 1350000
+    }
+  ],
+  "reconciliation": [
+    {
+      "conversion_delta_paise": 840000,
+      "excluded_delta_paise": -7420000,
+      "naive_mixed_currency_face_paise": 187480000,
+      "order_month": "2026-08",
+      "trusted_revenue_paise": 180900000
+    },
+    {
+      "conversion_delta_paise": 0,
+      "excluded_delta_paise": 0,
+      "naive_mixed_currency_face_paise": 113740000,
+      "order_month": "2026-09",
+      "trusted_revenue_paise": 113740000
+    },
+    {
+      "conversion_delta_paise": 0,
+      "excluded_delta_paise": -1060000,
+      "naive_mixed_currency_face_paise": 1060000,
+      "order_month": "unattributed",
+      "trusted_revenue_paise": 0
     }
   ],
   "top_products": [

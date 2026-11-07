@@ -12,7 +12,8 @@
     "decisions.json": "0387240fac7f6eeb17e0287ecee44377693aa05eff3c0432c28e7d482d04d6d3",
     "evidence.json": "3cec8b59ca522bd3dbbd573f18e6071f3332e86dc55a8ecd4c8ff32998eb1367",
     "flip.json": "039099bc491aaf7a8c0c900fcbea15f99bdf6b164be8beced3b60cbf254a0640",
-    "kpis.json": "f758451194ee4ffb75820415ffc43e936c52500e2d5fdc2fc9571421d84f5b21",
+    "kpis.json": "7040ffe3fd94da92cefb71438cc9fb2868a138fb31d5e20dbe5c0df968c52aa9",
+    "npm_audit.json": "a3faa7f12a343c52bf4f1a8ad2ec48a1cf4ebc587cab2e4d071e975b24e15f98",
     "parity.json": "70a74d657dcd39065b44be4af2893317eff3fbcae57a11c3f8b893d77fb6e23d",
     "sensitivity.json": "34e775656c26eeab474dbe8af5e4e3d6c38754dfb6d3da25439b99601825c1d0",
     "test_report.json": "35d5aceed7a80291f73156ef00a17195b3ead8e556b500f0ee7eba3cc857ee7e",
@@ -20,5 +21,5 @@
     "waterfall.json": "353d2c8a83136e43fcb2f1de272873f34de399f28eedde0da821dde519e9ba2d"
   },
   "pandas_version": "3.0.0",
-  "rules_code_hash": "ea0f9d7d12e82680e316aaed081354838f18e54ccacc1cb20dde850332a75aa3"
+  "rules_code_hash": "d9bf3216a540b25fd61284726d8bd842f7046c532d4b9b246a3b8bafe2bcaaec"
 }

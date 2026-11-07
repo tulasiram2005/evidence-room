@@ -26,3 +26,16 @@ WITH first_orders AS (
 SELECT order_month, cohort, SUM(revenue_paise) revenue_paise, COUNT(*) orders,
  COUNT(DISTINCT customer_id) customers FROM cohorts
 GROUP BY order_month, cohort ORDER BY order_month, cohort;
+-- query: health
+SELECT bucket, COUNT(*) rows FROM audit_rows GROUP BY bucket ORDER BY bucket;
+-- query: exclusions
+SELECT order_month, reason_code, COUNT(*) rows FROM audit_rows
+WHERE bucket <> 'clean' GROUP BY order_month, reason_code ORDER BY order_month, reason_code;
+-- query: reconciliation
+SELECT order_month,
+ SUM(face_paise) naive_mixed_currency_face_paise,
+ SUM(CASE WHEN bucket <> 'clean' THEN -face_paise ELSE 0 END) excluded_delta_paise,
+ SUM(CASE WHEN bucket = 'clean' THEN trusted_paise - face_paise ELSE 0 END) conversion_delta_paise,
+ SUM(trusted_paise) trusted_revenue_paise
+FROM audit_rows WHERE completed_like = 1
+GROUP BY order_month ORDER BY order_month;

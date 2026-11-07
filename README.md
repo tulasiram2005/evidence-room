@@ -40,3 +40,18 @@ See `docs/DECISIONS.md`, `docs/LIMITATIONS.md` and `docs/AI_DISCLOSURE.md`.
 Do not treat the naive waterfall base as INR: it mixes currency face values. Row
 coverage is a data-quality indicator, not probability that the business answer is true.
 The mocked drafter is not a live model. Codex assistance is disclosed honestly.
+
+## Bonus website
+```sh
+cd web
+npm ci
+npm run build
+python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
+```
+Open http://127.0.0.1:4173. The browser reads bundled aggregate evidence only.
+The raw and cleaned CSV files are not in the web build.
+
+Run `python3 tools/check.py` at the repository root for a saved test report.
+Run `python3 tools/package.py` to create the private submission ZIP beside the repo.
+See `docs/STATUS.md` for implemented versus unverified master-prompt requirements.
+The screenshot audit command is documented in `docs/DESIGN_ITERATIONS.md`.

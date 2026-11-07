@@ -151,6 +151,8 @@ def run():
     store.executemany('INSERT INTO clean_orders VALUES (?,?,?,?,?,?)', [(r['order_id'], r['normalized_date'], r['customer_id'], r['product_id'], r['order_month'], r['revenue_paise']) for r in clean])
     store.execute('CREATE TABLE products(product_id TEXT, product_name TEXT, category TEXT)')
     store.executemany('INSERT INTO products VALUES (?,?,?)', [(r['product_id'], r['product_name'], r['category']) for r in tables['products']])
+    store.execute('CREATE TABLE audit_rows(source_row_number INTEGER, order_month TEXT, bucket TEXT, reason_code TEXT, completed_like INTEGER, face_paise INTEGER, trusted_paise INTEGER)')
+    store.executemany('INSERT INTO audit_rows VALUES (?,?,?,?,?,?,?)', [(r['source_row_number'], r['order_month'], r['bucket'], r['reason_code'], int(r['status'].strip().lower() not in ('cancelled','refunded')), int(Decimal(r['face_value'] or '0')*100), r.get('revenue_paise',0)) for r in rows])
     kpis = {}
     query_text = (ROOT / 'sql/queries.sql').read_text()
     for block in query_text.split('-- query: ')[1:]:
@@ -170,6 +172,8 @@ def run():
     for r in kpis['cohorts']:
         subset = df[(df.order_month == r['order_month']) & (df.cohort == r['cohort'])]
         assert (int(subset.revenue_paise.sum()), len(subset), subset.customer_id.nunique()) == (r['revenue_paise'], r['orders'], r['customers'])
+    for row in kpis['reconciliation']:
+        assert row['naive_mixed_currency_face_paise'] + row['excluded_delta_paise'] + row['conversion_delta_paise'] == row['trusted_revenue_paise']
     write_json(results / 'kpis.json', kpis)
     write_json(results / 'parity.json', {'monthly': True, 'top_products': True, 'cohorts': True})
     waterfall = {}

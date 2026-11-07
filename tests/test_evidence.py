@@ -31,7 +31,7 @@ class EvidenceChecks(unittest.TestCase):
         db=sqlite3.connect(':memory:')
         db.execute('CREATE TABLE clean_orders(order_date TEXT,customer_id TEXT,order_month TEXT,revenue_paise INTEGER)')
         db.executemany('INSERT INTO clean_orders VALUES (?,?,?,?)',[('2026-08-01','C','2026-08',100),('2026-08-01','C','2026-08',200),('2026-08-02','C','2026-08',300),('2026-09-01','D','2026-09',400)])
-        sql=(ROOT/'sql/queries.sql').read_text().split('-- query: cohorts\n')[1]
+        sql=(ROOT/'sql/queries.sql').read_text().split('-- query: cohorts\n')[1].split('-- query: health')[0]
         rows=db.execute(sql).fetchall()
         self.assertEqual(rows,[('2026-08','new',300,2,1),('2026-08','repeat',300,1,1),('2026-09','new',400,1,1)])
     def test_site_payload_no_customer_or_full_orders(self):
