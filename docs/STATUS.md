@@ -14,7 +14,7 @@
 - React/TypeScript static site, both themes, charts, receipts and scenario controls.
 - Actual main in-app-browser checks: theme switch, scenario values, receipt filter.
 - Local tests and build; recorded results in results/test_report.json and npm_audit.json.
-- Private GitHub repository backed up; no cloud runtime or paid service enabled.
+- Public GitHub repository backed up; static hosting uses Vercel Hobby, with no paid service enabled.
 
 - Hypothesis suite: two properties with 100 generated cases each.
 - 46 tests passed; local security scans passed after isolated toolchain upgrades.
@@ -23,7 +23,7 @@
 - Local Lighthouse: performance 100, accessibility 100, best practices 100, SEO 82. Meta description and robots.txt fixes build successfully; their effect has not been remeasured.
 - Vercel dashboard identifies the selected workspace as Hobby (checked 2026-11-07). Static deployment is READY; HTTP/asset/header checks passed. Hosted interactions remain unverified.
 
-## Not yet fulfilled from the expanded master prompt
+## Remaining optional features and verification
 - Hosted CI execution and remaining SQL lint/type gates. Python transitive lock, local Ruff/Bandit/pip-audit and TypeScript build checks are implemented.
 - Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Bounded Gemini native function calling is implemented with preserved call IDs/signatures, strict tool validation, three rounds/eight calls maximum, and fallback tests. Live provider validation remains unmeasured.
 - The complete custom design specification (fonts, every-number evidence drawers,

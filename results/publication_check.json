@@ -1,5 +1,5 @@
 {
-  "history_blobs_scanned": 153,
+  "history_blobs_scanned": 420,
   "findings": [],
   "passed": true,
   "scope": "Pattern scan only, not proof that all sensitive data is absent."
