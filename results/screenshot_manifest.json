@@ -1,0 +1,1285 @@
+{
+  "count": 320,
+  "files": [
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-ai-claim-check.png",
+      "sha256": "c486684abba3d1210fd9fbfdca7544e040509cda3b646501f60d420c87861a3f"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-data-health.png",
+      "sha256": "e561c7b2bf9455cd2e804303e2ebcaf4741ccdea7cb8766edaacfefde23b6fcf"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-executive-summary.png",
+      "sha256": "59729d4ca81bbb4d6a3e707ede341f6c26ff75f5ceaf37e1d21dc92390e70028"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-method.png",
+      "sha256": "a91312658d70fb94fcdc2ed9e7a244b0b4dbc4c9b8f6d06fd8021e9e641ed61b"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-new-vs-repeat.png",
+      "sha256": "abdd618242881fd5d80e308c42153b6d5bbce59bd5d7b22b10b145a0f8e1847f"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-quarantine.png",
+      "sha256": "439e2e9d6c749230615362cccdbf50b09868b7ac175bc9d6770e8678d454e6d0"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-revenue.png",
+      "sha256": "5984d7fd2dbfda063035aedfb0f8ad1a85937d619ffcc1759c000b4a77520f9b"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-trust.png",
+      "sha256": "677795d3dc6d13fc1344fbc25668865f50f84bc4babf5ac3cc990157531466f6"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-verdict.png",
+      "sha256": "95480c47ea0c9bed25791211cecb3b01232e614a5145e494a7c350248355d130"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-dark-what-could-change-it.png",
+      "sha256": "6d32428b5aeec5cbcbb07491c461f59029e08772509f9e922b858658cf864990"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-ai-claim-check.png",
+      "sha256": "2fc1521c32cfef066d7a32692c73dda004957f2fdfc9dfc9cdc8fbd628eb5bab"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-data-health.png",
+      "sha256": "69339829390ff8415d5de4d10266dd3462f480fc3085aaafbeffec4937086ec5"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-executive-summary.png",
+      "sha256": "fba16565349b6f639bd0f282b2273a523ee2d7f8a245f899043635b160f1fc35"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-method.png",
+      "sha256": "65b91996752bf07ffafd2df34f1a4d36dcc6097af9e8b281a469cdf0df28c988"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-new-vs-repeat.png",
+      "sha256": "fb23d4acd72a5325594c210b59456d77cb273553298a1d0b94abc9cdc9cf815f"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-quarantine.png",
+      "sha256": "0eaa70a5bc33733769eaf68dd27b25dfbd03737a9e1b834106acd227f6188358"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-revenue.png",
+      "sha256": "6ad8bbe3aeed5450a7d8a929dd20bbe14dae1bfe537482fecb28e8659c0bdf68"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-trust.png",
+      "sha256": "d88d88b4efd617862802c1e3212c2904c1161cd0d66610596d5e371eaf94a9eb"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-verdict.png",
+      "sha256": "46ed3ae7f758d6b49948fdb971a8ecbb6528911c7c5f950ec61d90987d9f23bf"
+    },
+    {
+      "path": "results/screenshots/baseline/1280-720-light-what-could-change-it.png",
+      "sha256": "c9409da8762858e3e0632008f1424550f2822109b544e0618ac288be82873a98"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-ai-claim-check.png",
+      "sha256": "c5f11b02c79b5770cf614173e381706746e155752b7dff7ed80347f752f31e89"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-data-health.png",
+      "sha256": "f2028288f628af5fda6c157b2b7dac7556bb6ca4ba5ba02d8adcf605e4c6d068"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-executive-summary.png",
+      "sha256": "da8437cc4cc3e5b8bc086ad2f18b383bb8b915c9af4427242ad0be6aa5d00d9e"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-method.png",
+      "sha256": "9c09723fe40ca807138dade26d13fca28acd64f87334930124e556969cbc0076"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-new-vs-repeat.png",
+      "sha256": "0bde2de410f38c3ec297189ca10dc1b37e6a41bd37c2434dfbdc43af61a8c853"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-quarantine.png",
+      "sha256": "ba597b72b451608a43cfb82733f081b54425764bf5b0d8261eaa02ec1e0e701c"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-revenue.png",
+      "sha256": "4e09cc96e6bb0db7e66f6e5bbf2cd96380c05536e3fc842929dc32bed548e4e7"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-trust.png",
+      "sha256": "0447f611a06ef1eaa41553a040928e1c8bd9afbdcfc46c5fe886d66b7a3fe6e2"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-verdict.png",
+      "sha256": "36af3a625bb6802b0645112fd88c2237845d873cab532d220e6698663dac879b"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-dark-what-could-change-it.png",
+      "sha256": "fe918573bdba7a70e890437a30f394a06ad8cac1eebddf503418ad2e421064c9"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-ai-claim-check.png",
+      "sha256": "90819ee34abe2bf3546995fc1c6d3753531ef7938c44da7388cc0fb76108a2e4"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-data-health.png",
+      "sha256": "ef02ff34e1923db14e170b4462a2572ed4adb5fb8aa44caf1d9975b6e2d8b66d"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-executive-summary.png",
+      "sha256": "9dd25f6bd01450ea7836dcace12525435ef2262a33366f11d4660efd563538d2"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-method.png",
+      "sha256": "179366c36095dc0557e9995fe0ee5d580daa588ae3d23e66d2eb27d85f1089fe"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-new-vs-repeat.png",
+      "sha256": "c48c9b7a65e508b7b4cfeac44b1c64ee389fa7cf5de48344e0ba9c56eb0142cf"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-quarantine.png",
+      "sha256": "6e46292de0305d6e4922651feab7d78e98906167dc901fbaed40612607508b39"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-revenue.png",
+      "sha256": "59bcabe3c91a5778c1e3068e6caa3c2b91998dfdd584f10b8155df112d03c423"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-trust.png",
+      "sha256": "87b71140346d517864f21e6913455acfd6b7fcfdbecb77c07efa5292231e9070"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-verdict.png",
+      "sha256": "0976bc01e6174b22ac53bb25822cff2ff340ef639587908adb889683b945e772"
+    },
+    {
+      "path": "results/screenshots/baseline/1440-900-light-what-could-change-it.png",
+      "sha256": "a5b451b7785186bfb6eb4642f14c2548f57b0bb49082e4d843b394168b36fac9"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-ai-claim-check.png",
+      "sha256": "1ca1c5dbe23b9b27517c772cd0612a5fc40a21250078bbdcc0d028e04d32e9e5"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-data-health.png",
+      "sha256": "c5fb85d117bcbb59cd1964eee519a7bab787dc3fd8cfb283157b173aee848c92"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-executive-summary.png",
+      "sha256": "375dee63cea22708df01d670c52f54a8bd68d89c0e2561e0c6f9780d0b764317"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-method.png",
+      "sha256": "028b92f1a5cdad6229ae5e1115674619164daf1d4d3bbed5703ab245eaf92254"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-new-vs-repeat.png",
+      "sha256": "c31e2c2d669266de5861b6f0e7801e3243a54a04a3acd1f0fdf5e3d30b2434ab"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-quarantine.png",
+      "sha256": "2199cb7c1920865b02691859584a71011736c71de434e3838ecd4c915cfdc73c"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-revenue.png",
+      "sha256": "226979663a5006075feb955eb83562ba255945869125f28c6a9343800f8bb645"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-trust.png",
+      "sha256": "b29deeea5b5968a6a044d65c82e5dd3a2146a02f3446c3f5a7c2e127c75880e9"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-verdict.png",
+      "sha256": "00e828ea433510ef8123704edf03b29349c2a3ba40e4e1c3f9a71d4110c8ee64"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-dark-what-could-change-it.png",
+      "sha256": "913c0f11bbaae2bc58cbae873ed74488aaa2d6512e6e229e3a4d4aef1d85643a"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-ai-claim-check.png",
+      "sha256": "42aa9b2710b26d77954e08287a5f5b3cb56d1e12d3c1bda6bedd96ae2a13e6db"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-data-health.png",
+      "sha256": "bd7eb7c4d89ddb26b6ecbfc9be9362e856b81473e767a8312eceb5e577629483"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-executive-summary.png",
+      "sha256": "5edba4aca05d579fc584cc3e977122d7cb6546c1a44b91119c668a3884117a23"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-method.png",
+      "sha256": "e35e4720c15f7b5b742e1c265fd214c1ef84ec56e670c068ee65f2524f67ee26"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-new-vs-repeat.png",
+      "sha256": "f8434645f0e5b3fb1f50cf07411cf2ac42a2c13946382cffead9e6cac6a3bf87"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-quarantine.png",
+      "sha256": "53bb30284fca9b2249e9f4b5a7bae7ffe129dd372a15bafc722976dbebb8fbe0"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-revenue.png",
+      "sha256": "a2e07b45dd4d57fcd2a56117323fe758d7a9185a9b7c0768c94b4ea87949f365"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-trust.png",
+      "sha256": "5777af0989ec2f191c3d050e70b48493eaf7837d5013a7622716bd434437b833"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-verdict.png",
+      "sha256": "aab1d99b43905324e32ca02549c81bb11145e4b95716bb9af69b399e1e94ab4f"
+    },
+    {
+      "path": "results/screenshots/baseline/1920-1080-light-what-could-change-it.png",
+      "sha256": "da5b2670860e199704cd41c8538388196368cfcd7fede130e4244f5b9a498375"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-ai-claim-check.png",
+      "sha256": "f33c33611a0521d220b1ab7a87afa2453eded7d125c7f45dd717bb7dd8a28526"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-data-health.png",
+      "sha256": "6cffbe7fc87993efe08fe08e19ef69cc8d03d8d25ecf592dd74b566b5d726198"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-executive-summary.png",
+      "sha256": "66bdc12a3f6aaa16ac37bac5981ad198f197142628fe7fc2636f04e88728dea1"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-method.png",
+      "sha256": "97d14f47b98a78477518c43c604cb0271225dc398d5f678aab6253787e4d4aea"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-new-vs-repeat.png",
+      "sha256": "3d45314f689b07e49fc8a4070f5efa7444358c3c4dcf3f197c399ec170824150"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-quarantine.png",
+      "sha256": "20431696007113e883612a7349ca11db0f5f07c2a9df1ceeb1dd6de22b0771bd"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-revenue.png",
+      "sha256": "139542bcac4a101a6ecbc5cf8773b6cee1739ab05e75c089c8a5d406753b5c0e"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-trust.png",
+      "sha256": "34747a8d4916a92e2f7c96c6c74b4e65ff6d65106759e3ef2eba9a15929f743b"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-verdict.png",
+      "sha256": "0b615660c363458774ad920a7715820f4005237ec2176c196a322fde8701aadc"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-dark-what-could-change-it.png",
+      "sha256": "2a75b044584859a76468d5d7fe31aab161cf0e41d42fcfbcd5d6e34c2d752659"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-ai-claim-check.png",
+      "sha256": "a4554474deb6ee648c9da30769aefe0b5ae5c19c3b0f54d68cfe7b852c9672d3"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-data-health.png",
+      "sha256": "848b6507fa5eef2a202e361590a853f1409717f1a378c9a23512cc1e0a0b9540"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-executive-summary.png",
+      "sha256": "ac27c798e43b458bccfaadff8013dfa8c2e1c9405416b418bd755242369ab0b3"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-method.png",
+      "sha256": "22ab5545c8bf97ae86fbba152eca09ef9a2bd2c44648997dbfa8b3c0e9df65dd"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-new-vs-repeat.png",
+      "sha256": "42b61152ad4ab0f8248dfdab7d010c9dcc0e33014aec67580dc6938d0958f91d"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-quarantine.png",
+      "sha256": "be3b544d04be3ebb9c68b97b7fcc6fa22138a31d129d47c4a5dcdd11d16f188f"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-revenue.png",
+      "sha256": "05780849736b87356968e59550f0e88b3a3fda47cb3ee6f6f2b680b4eb1f6fad"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-trust.png",
+      "sha256": "d9a46fbc93a8cbec2aba74f100d920035fe18c2b119754a1ce94585364794641"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-verdict.png",
+      "sha256": "ddb3683854c4d8edbb2515721c7db08f083c5b1cdc4ebc2419eb513689f3282b"
+    },
+    {
+      "path": "results/screenshots/baseline/768-1024-light-what-could-change-it.png",
+      "sha256": "4ef2645c28426350f109453136817781ba5ff573d3ccd7cd8353cfebbc04ee70"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-ai-claim-check.png",
+      "sha256": "f94d689534778adbda62c8a7e76ac324a730b976d6bb49ba8bf0d5627577b559"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-data-health.png",
+      "sha256": "e561c7b2bf9455cd2e804303e2ebcaf4741ccdea7cb8766edaacfefde23b6fcf"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-executive-summary.png",
+      "sha256": "1c06cd8e8a710b99a5b5ae757c03e8b2a9c563886d1c3d20eade89696c1af322"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-method.png",
+      "sha256": "4d596a7e50fdc8e425d397f889b1142774635062e7abb18b68c50f5ef8c111ba"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-new-vs-repeat.png",
+      "sha256": "abdd618242881fd5d80e308c42153b6d5bbce59bd5d7b22b10b145a0f8e1847f"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-quarantine.png",
+      "sha256": "852217d40f58fd42e7d9ec1f88b1182c0e4e63414ba492815d7ae3c868c390a8"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-revenue.png",
+      "sha256": "dc6c9cc5ae10a743e2f50bbf9df96a40336c6c23c5cf27e40389d30840955bfa"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-trust.png",
+      "sha256": "677795d3dc6d13fc1344fbc25668865f50f84bc4babf5ac3cc990157531466f6"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-verdict.png",
+      "sha256": "95480c47ea0c9bed25791211cecb3b01232e614a5145e494a7c350248355d130"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-dark-what-could-change-it.png",
+      "sha256": "eec046233886dade4d1307507cd8c3d91dac19076793b6dbdb29624b39c0c77e"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-ai-claim-check.png",
+      "sha256": "3c54c67920b589f1662684394d94a402cf347a48c713daecf10d7b4086d6d01f"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-data-health.png",
+      "sha256": "69339829390ff8415d5de4d10266dd3462f480fc3085aaafbeffec4937086ec5"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-executive-summary.png",
+      "sha256": "02059a2a66bae2a95154cd84bad2ee044321ea55f8524d384aa61326cdf4ff63"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-method.png",
+      "sha256": "5760b69586ecb1af1762b842af171257c498bfd69e1d2da3429fce48908d41a0"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-new-vs-repeat.png",
+      "sha256": "fb23d4acd72a5325594c210b59456d77cb273553298a1d0b94abc9cdc9cf815f"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-quarantine.png",
+      "sha256": "510c77d0914c82165c2d6f46c2e88e5725134a911ecbb51d945b6d6602981c18"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-revenue.png",
+      "sha256": "a0dccaea72cd935d0d3fdab097ebcf030379952164103f38fafefd82f7339624"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-trust.png",
+      "sha256": "d88d88b4efd617862802c1e3212c2904c1161cd0d66610596d5e371eaf94a9eb"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-verdict.png",
+      "sha256": "46ed3ae7f758d6b49948fdb971a8ecbb6528911c7c5f950ec61d90987d9f23bf"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1280-720-light-what-could-change-it.png",
+      "sha256": "2caf13f68b34a072b33cc991f6d388c45f0f834fe642f75f30e18ecbeb9cf534"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-ai-claim-check.png",
+      "sha256": "12b102a8347819545f5acc26f454b465a7f8b57d10d48bd4077aa67cba2c27da"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-data-health.png",
+      "sha256": "f2028288f628af5fda6c157b2b7dac7556bb6ca4ba5ba02d8adcf605e4c6d068"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-executive-summary.png",
+      "sha256": "97587bc530c86da00515290dcea6a546d676092fd43b19f8a47a712a95e48d6d"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-method.png",
+      "sha256": "80dce034594540d1614ea303be2e32198908d8fe3bec70b1fa2d6e503d02bc62"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-new-vs-repeat.png",
+      "sha256": "0bde2de410f38c3ec297189ca10dc1b37e6a41bd37c2434dfbdc43af61a8c853"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-quarantine.png",
+      "sha256": "bb35c5c7ff439abbe12602f3dc487321f46c2e26c0cd0b1c1704575f7d187e37"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-revenue.png",
+      "sha256": "3df23172bf71872a57e1e86af81eadc654c9f5f3864efee52ce979c521b12b20"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-trust.png",
+      "sha256": "0447f611a06ef1eaa41553a040928e1c8bd9afbdcfc46c5fe886d66b7a3fe6e2"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-verdict.png",
+      "sha256": "36af3a625bb6802b0645112fd88c2237845d873cab532d220e6698663dac879b"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-dark-what-could-change-it.png",
+      "sha256": "a97f39fbf027db451c2422e337f33bdcbff3dc09b3260de4f8607d15ad1506b6"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-ai-claim-check.png",
+      "sha256": "729ad1977ba4aaaabdd6b295dc474d9fcee043f2c2828f86c8d1b8c3f9e48744"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-data-health.png",
+      "sha256": "ef02ff34e1923db14e170b4462a2572ed4adb5fb8aa44caf1d9975b6e2d8b66d"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-executive-summary.png",
+      "sha256": "f3374562b089b07b61e31f4ed7ca9951afb29b576cc424997d10c98c88724b1b"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-method.png",
+      "sha256": "64b50bfee84c75792d78ef1d11b2e0606c6d50286290305d1d1801b02f612b3e"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-new-vs-repeat.png",
+      "sha256": "c48c9b7a65e508b7b4cfeac44b1c64ee389fa7cf5de48344e0ba9c56eb0142cf"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-quarantine.png",
+      "sha256": "f984da1475e221d6ed20592217f9ddcd5613df0a8753ea6767ea21bb72b53410"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-revenue.png",
+      "sha256": "16e30af6053058c00b15e0c880a59dc5b20180421cec349ab95bbc5445dd7e23"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-trust.png",
+      "sha256": "87b71140346d517864f21e6913455acfd6b7fcfdbecb77c07efa5292231e9070"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-verdict.png",
+      "sha256": "0976bc01e6174b22ac53bb25822cff2ff340ef639587908adb889683b945e772"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1440-900-light-what-could-change-it.png",
+      "sha256": "8f0be523e671c9d9cc45e9c30c2f4ff4aa3952c5446ab8bb11c906ff00d71fef"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-ai-claim-check.png",
+      "sha256": "0930d9d56b37c2da483fdafe21e744034221c395e53c740c7b57af9faab0572f"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-data-health.png",
+      "sha256": "c5fb85d117bcbb59cd1964eee519a7bab787dc3fd8cfb283157b173aee848c92"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-executive-summary.png",
+      "sha256": "abf3a7b3d12ae4d76bf31e78c58a7982e73ae0469569eec58affd4f8a3798c39"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-method.png",
+      "sha256": "f85b09d630d6c9c54b3e3aaddae661604ee16e75d189f45f423db862ca34b56c"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-new-vs-repeat.png",
+      "sha256": "c31e2c2d669266de5861b6f0e7801e3243a54a04a3acd1f0fdf5e3d30b2434ab"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-quarantine.png",
+      "sha256": "ffabc443debeebbf1b4055a89709e4301a5215a1c862ccd5da306f858adc0720"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-revenue.png",
+      "sha256": "eeaad8987150254a788859ed9195ea77d933c4429e8cad5471d2792347a1139f"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-trust.png",
+      "sha256": "b29deeea5b5968a6a044d65c82e5dd3a2146a02f3446c3f5a7c2e127c75880e9"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-verdict.png",
+      "sha256": "00e828ea433510ef8123704edf03b29349c2a3ba40e4e1c3f9a71d4110c8ee64"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-dark-what-could-change-it.png",
+      "sha256": "49370702c136cb6e2fe14531e122593d3134027e800c09d6176a5af41e0277e1"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-ai-claim-check.png",
+      "sha256": "7a77f135ff82aff46e595f0df61322fd1b89e96b06bc46e782519aa775a0409c"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-data-health.png",
+      "sha256": "bd7eb7c4d89ddb26b6ecbfc9be9362e856b81473e767a8312eceb5e577629483"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-executive-summary.png",
+      "sha256": "96b8993533a6596d086b4a46f01772a94a50a2234785d1f259466ec6df0724bf"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-method.png",
+      "sha256": "36b2aa70d81a5bdef63ae92cc59269971776addc9e23c081b25953590a3471a2"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-new-vs-repeat.png",
+      "sha256": "f8434645f0e5b3fb1f50cf07411cf2ac42a2c13946382cffead9e6cac6a3bf87"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-quarantine.png",
+      "sha256": "ae1b64d9240ff68c1950567c86caae05cbd0f07ea4aee5ef5636553a46774195"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-revenue.png",
+      "sha256": "9e43a05d2d9fe4248eef39368b40edd5aada6cd2095f28e0f7b1c1387428c9e7"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-trust.png",
+      "sha256": "5777af0989ec2f191c3d050e70b48493eaf7837d5013a7622716bd434437b833"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-verdict.png",
+      "sha256": "aab1d99b43905324e32ca02549c81bb11145e4b95716bb9af69b399e1e94ab4f"
+    },
+    {
+      "path": "results/screenshots/iteration-1/1920-1080-light-what-could-change-it.png",
+      "sha256": "3b6de7d8931ec5c3ed7da0f5fbd4b6236b25d1bb7c7cf0bab51be0a47753c5d3"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-ai-claim-check.png",
+      "sha256": "c7ff0fae449caabe4a5b6fdaec50e0fb3dc1d04a304ca0ed6bae46bc526ba982"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-data-health.png",
+      "sha256": "6cffbe7fc87993efe08fe08e19ef69cc8d03d8d25ecf592dd74b566b5d726198"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-executive-summary.png",
+      "sha256": "3fd26763bca042f0eb0310d97959d4b1787594710ae40c17da4bb44aee99b006"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-method.png",
+      "sha256": "5b802da180afbf1509b167c429775876817dc38bfad4de35482201b1ab2a1ceb"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-new-vs-repeat.png",
+      "sha256": "fd0a57d2cf187c1c36c2f6394f77ed58038201c6321d0f2641daf26d822bdd2e"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-quarantine.png",
+      "sha256": "d9ba868bb468d0bb36c5027486d3d86915766b9e02603792b0db22c3f86017ad"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-revenue.png",
+      "sha256": "faa4fa2f939201637791493ce5d2f22bf358c5064891e7bddd7804b010b25c62"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-trust.png",
+      "sha256": "34747a8d4916a92e2f7c96c6c74b4e65ff6d65106759e3ef2eba9a15929f743b"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-verdict.png",
+      "sha256": "0b615660c363458774ad920a7715820f4005237ec2176c196a322fde8701aadc"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-dark-what-could-change-it.png",
+      "sha256": "0aab3672c7f954df57fc75ac3a8783f3b4baeb5b644893e2303b673c3b23a34c"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-ai-claim-check.png",
+      "sha256": "4e1da2b3388e1b3fcb39a7034745020fc220c555dbd091499e1645d8a9e8f8d4"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-data-health.png",
+      "sha256": "848b6507fa5eef2a202e361590a853f1409717f1a378c9a23512cc1e0a0b9540"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-executive-summary.png",
+      "sha256": "3e0084c5ca24565d07c4c6af05f492774a9319457275026f220a9274a6a8187c"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-method.png",
+      "sha256": "6910b1dafecc2caa24c11088d372d9deec9ba71340b6a5eec5969d448f7e6a45"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-new-vs-repeat.png",
+      "sha256": "56431f9ebf77ea8fdf144b0ebc06e34b42c5c1bd7db4981b67e3aaf8982fc353"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-quarantine.png",
+      "sha256": "42f9b6ca8ec245d09e9da2d7e6814164ac707bf79c728c59f3aede87d3c956cd"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-revenue.png",
+      "sha256": "3ee18d3d3b2764deb7fd931a2bab6f739b08ec5752495d4be03260de13566f37"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-trust.png",
+      "sha256": "d9a46fbc93a8cbec2aba74f100d920035fe18c2b119754a1ce94585364794641"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-verdict.png",
+      "sha256": "ddb3683854c4d8edbb2515721c7db08f083c5b1cdc4ebc2419eb513689f3282b"
+    },
+    {
+      "path": "results/screenshots/iteration-1/768-1024-light-what-could-change-it.png",
+      "sha256": "cfaff38bc8ae4f1c34f80c8d82c2a779da65d51c6a5c05de236b16dfeea0474f"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-ai-claim-check.png",
+      "sha256": "cab12659057f3825f096926f293ea446b41eeaaf5636573b4aee1d409d3d29d2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-data-health.png",
+      "sha256": "e561c7b2bf9455cd2e804303e2ebcaf4741ccdea7cb8766edaacfefde23b6fcf"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-executive-summary.png",
+      "sha256": "668712b50505ad6ddd10a164f3a5a27ca85a8040abe3878c4de99027e537d707"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-method.png",
+      "sha256": "d77d23e02552aefd6d770191b6c7ba1dd7f65f78ce159001432c8628a6fe7d79"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-new-vs-repeat.png",
+      "sha256": "abdd618242881fd5d80e308c42153b6d5bbce59bd5d7b22b10b145a0f8e1847f"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-quarantine.png",
+      "sha256": "852217d40f58fd42e7d9ec1f88b1182c0e4e63414ba492815d7ae3c868c390a8"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-revenue.png",
+      "sha256": "cfddc2c551dffdcc45030f35fcfa3e669888a6ddbed85c357cc0bf2acab61f4c"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-trust.png",
+      "sha256": "677795d3dc6d13fc1344fbc25668865f50f84bc4babf5ac3cc990157531466f6"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-verdict.png",
+      "sha256": "95480c47ea0c9bed25791211cecb3b01232e614a5145e494a7c350248355d130"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-dark-what-could-change-it.png",
+      "sha256": "3a92b2aba0dabd7205d665eb09260c201a93af0aff753e8cf06e7022a6e3976e"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-ai-claim-check.png",
+      "sha256": "4bb4fcc6336ad1cfcaf6cf5411588786448dcc06ef52c2b07043c3d5189013c9"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-data-health.png",
+      "sha256": "69339829390ff8415d5de4d10266dd3462f480fc3085aaafbeffec4937086ec5"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-executive-summary.png",
+      "sha256": "49d36595d01df36a6600920eb7fbb470a518914d359e4a8bf9c8afdccc9897d2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-method.png",
+      "sha256": "69c44f2d57b9342c46319eb6b3912d1ba67551bc8c854f48d3f837a90e5be3fe"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-new-vs-repeat.png",
+      "sha256": "fb23d4acd72a5325594c210b59456d77cb273553298a1d0b94abc9cdc9cf815f"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-quarantine.png",
+      "sha256": "510c77d0914c82165c2d6f46c2e88e5725134a911ecbb51d945b6d6602981c18"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-revenue.png",
+      "sha256": "9006416b7f628c5def5b8519c4b66764111063eb633b283ec975ee834795bf5c"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-trust.png",
+      "sha256": "d88d88b4efd617862802c1e3212c2904c1161cd0d66610596d5e371eaf94a9eb"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-verdict.png",
+      "sha256": "46ed3ae7f758d6b49948fdb971a8ecbb6528911c7c5f950ec61d90987d9f23bf"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1280-720-light-what-could-change-it.png",
+      "sha256": "dc3410d9eb6ba43320097aef21b8ab08499e7361d12900e141f6d1beec52fdae"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-ai-claim-check.png",
+      "sha256": "b952a909650c065d0a2575d204c6c13bab512f2911088155bd78f20fb289eb3a"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-data-health.png",
+      "sha256": "f2028288f628af5fda6c157b2b7dac7556bb6ca4ba5ba02d8adcf605e4c6d068"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-executive-summary.png",
+      "sha256": "ac7b127e2b3aea674de9315388c5ba394c29ebabb8cef96d3615baca8ce33ec3"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-method.png",
+      "sha256": "79d3b1d8e2bbd61fcedfe414dff10c5736d7e5276c49d5b08cd538175bb157a2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-new-vs-repeat.png",
+      "sha256": "0bde2de410f38c3ec297189ca10dc1b37e6a41bd37c2434dfbdc43af61a8c853"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-quarantine.png",
+      "sha256": "bb35c5c7ff439abbe12602f3dc487321f46c2e26c0cd0b1c1704575f7d187e37"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-revenue.png",
+      "sha256": "f9dfefc34face902168c101463cad8caf3e0dd79e3a6f9023f6cc213c9c0cb30"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-trust.png",
+      "sha256": "0447f611a06ef1eaa41553a040928e1c8bd9afbdcfc46c5fe886d66b7a3fe6e2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-verdict.png",
+      "sha256": "36af3a625bb6802b0645112fd88c2237845d873cab532d220e6698663dac879b"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-dark-what-could-change-it.png",
+      "sha256": "b21f14e41a29f16ba7e7738949227ca55e4fb7d60b0b146a529591dc5c39605b"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-ai-claim-check.png",
+      "sha256": "440ca36f54eb812df72a8b5e519f7c393ba3b56e0b205943412a47f8006c53fd"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-data-health.png",
+      "sha256": "ef02ff34e1923db14e170b4462a2572ed4adb5fb8aa44caf1d9975b6e2d8b66d"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-executive-summary.png",
+      "sha256": "2817a5739a1386a4f5ded96c91ab37e29261aa1f5c350f04eaac8190f9a91fc4"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-method.png",
+      "sha256": "487577bf6e85ac4f50c1311d229cae931cc1090605762b69ac3cb8963f8cc228"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-new-vs-repeat.png",
+      "sha256": "c48c9b7a65e508b7b4cfeac44b1c64ee389fa7cf5de48344e0ba9c56eb0142cf"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-quarantine.png",
+      "sha256": "f984da1475e221d6ed20592217f9ddcd5613df0a8753ea6767ea21bb72b53410"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-revenue.png",
+      "sha256": "545b12d1b79399e104e4f83486aed4d2cbd959e22579d6333e0eccc6db55c7d2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-trust.png",
+      "sha256": "87b71140346d517864f21e6913455acfd6b7fcfdbecb77c07efa5292231e9070"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-verdict.png",
+      "sha256": "0976bc01e6174b22ac53bb25822cff2ff340ef639587908adb889683b945e772"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1440-900-light-what-could-change-it.png",
+      "sha256": "0cb90c8c394aec9e6ab122f0902e9d4c4e342a1b304f5fdb9351702a3105e7f6"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-ai-claim-check.png",
+      "sha256": "123625c02011a71473b8bb2e9b04436297d21d0b6159c2218b62e371dc2c5348"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-data-health.png",
+      "sha256": "c5fb85d117bcbb59cd1964eee519a7bab787dc3fd8cfb283157b173aee848c92"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-executive-summary.png",
+      "sha256": "0668916339d360dee7f94085e6c7fc6d3c3ff434f1824dc675b5cbcded14207b"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-method.png",
+      "sha256": "0603dbed268c8b150ecc6512bcce409c9fed417ae29f6e413fb17b6485a8ba1f"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-new-vs-repeat.png",
+      "sha256": "c31e2c2d669266de5861b6f0e7801e3243a54a04a3acd1f0fdf5e3d30b2434ab"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-quarantine.png",
+      "sha256": "ffabc443debeebbf1b4055a89709e4301a5215a1c862ccd5da306f858adc0720"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-revenue.png",
+      "sha256": "a4ed5d57a9f4dfe953e092b5c2f88bff1ae443643dad622774c6cfbe42f74a79"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-trust.png",
+      "sha256": "b29deeea5b5968a6a044d65c82e5dd3a2146a02f3446c3f5a7c2e127c75880e9"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-verdict.png",
+      "sha256": "00e828ea433510ef8123704edf03b29349c2a3ba40e4e1c3f9a71d4110c8ee64"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-dark-what-could-change-it.png",
+      "sha256": "1737396c3362fcb19784d7db96a8ac47d8375366bac1f4e9cb98067ae4ddbda2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-ai-claim-check.png",
+      "sha256": "15284caa8e89984028887eac8c441c61b6fc030aac89eea2d4656e8116125c95"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-data-health.png",
+      "sha256": "bd7eb7c4d89ddb26b6ecbfc9be9362e856b81473e767a8312eceb5e577629483"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-executive-summary.png",
+      "sha256": "b9e7fab315ea8bc5ef189ff20d185833888793eb66ddf30a06ae9e2013c4d125"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-method.png",
+      "sha256": "f0e32155758a160a9953f473f86e449c579c5fc03ccf6c9c6adcb6bd6797b11d"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-new-vs-repeat.png",
+      "sha256": "f8434645f0e5b3fb1f50cf07411cf2ac42a2c13946382cffead9e6cac6a3bf87"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-quarantine.png",
+      "sha256": "ae1b64d9240ff68c1950567c86caae05cbd0f07ea4aee5ef5636553a46774195"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-revenue.png",
+      "sha256": "a4261e10ee903d7ca9977f3b602446843221f8cb56bc15c49d594109f51a8650"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-trust.png",
+      "sha256": "5777af0989ec2f191c3d050e70b48493eaf7837d5013a7622716bd434437b833"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-verdict.png",
+      "sha256": "aab1d99b43905324e32ca02549c81bb11145e4b95716bb9af69b399e1e94ab4f"
+    },
+    {
+      "path": "results/screenshots/iteration-2/1920-1080-light-what-could-change-it.png",
+      "sha256": "8dc2fa7d802e2df665dc025285fe6989494b7a17e35652f1c77c2e3f44180c42"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-ai-claim-check.png",
+      "sha256": "1bb6e282f10d2f9339b87e292cca360f9d69beedb6816bc4cf0eeacea61fb733"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-data-health.png",
+      "sha256": "ef6675d5609f65aee00320195e33b4c785087780850d3f28fcfcff335971dbb2"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-executive-summary.png",
+      "sha256": "ba603b1df697c72169d870f1b84259eb7a554c482bc9e798295f7bf24fd1851a"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-method.png",
+      "sha256": "eab3ac0bf17ec1e5cf8cfd080aa9a2218266de0b3d7e7e0440c47174de6aa149"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-new-vs-repeat.png",
+      "sha256": "c313010390f2af6c5212b11bc484e64b8932cd7a9dcf246b80801aa55b214b1a"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-quarantine.png",
+      "sha256": "a821a26550a182ecc4ab63ae057800e32c2bc659e24b69318403263aaf1ad7e1"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-revenue.png",
+      "sha256": "6963e1fcb7438ed4de70a8e1ae27c59a70b1a2389dd84d4fbddb1ba0c11ff88d"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-trust.png",
+      "sha256": "c2d41bbdfdd51aff11af1838eca97a952f11b304c1716a65df82a7bc1afe7d24"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-verdict.png",
+      "sha256": "ac7e3a6f366df89a3e0233bb06d6b189d5c5de7355635ae865be93d9db995313"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-dark-what-could-change-it.png",
+      "sha256": "18369262b0603451b697fa87be01379a08be37cf0a21dad24d03a373d1614486"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-ai-claim-check.png",
+      "sha256": "4914c2bfd11b979db7109880cab85f0d53688a1bbf9fbb84d39ca063edcb10fd"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-data-health.png",
+      "sha256": "18cb02987564d85d7e9c8e5d4d563faa93a8508903352ba682a2230dfea7bc77"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-executive-summary.png",
+      "sha256": "151d3b502491a7b5333b35cd38a35c577a74b2f9e41d6aa109b7eb960abd3cd5"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-method.png",
+      "sha256": "65298211f3c5851aef49c0bbb255f789c3cf9553f07c694f3894bee75a4cf712"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-new-vs-repeat.png",
+      "sha256": "36486cf78b8db82c3c0b0d671c8abc98ac243706ce085467e93ae8d2ecc50d59"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-quarantine.png",
+      "sha256": "3b40c424488aa6d943201b573868871dd2346cb24cdc3c6da8fa0ad8af3afcf1"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-revenue.png",
+      "sha256": "cace85d84e7bb82fd605dbc3317a94ef2ebd5fe8ef3221e1179a672addf1a246"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-trust.png",
+      "sha256": "70f88b878744d45a3a4305dab3ebd3afca3fd54676ab5e9f5b0950f3273f1d34"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-verdict.png",
+      "sha256": "3fbb8fa06679684a588ee45535fcc2186fec112efc066320b410a0a40d854cf9"
+    },
+    {
+      "path": "results/screenshots/iteration-2/768-1024-light-what-could-change-it.png",
+      "sha256": "c1009ab399e2c6fd2572f53a2e4110388f22b697c6dbef9cef65d4592375ce71"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-ai-claim-check.png",
+      "sha256": "156ccbd526ea33e4f61818c4800f968e4ba2734f75e723995ff66d288171a7a3"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-data-health.png",
+      "sha256": "9ca1395b00752c1d1503191a3fa3e9b58da9460716aa9a77c828bb6decd0e637"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-executive-summary.png",
+      "sha256": "cf3f4c36b4990a767ef798122b5b37701ff18850cc50c704d1fea769019fe25e"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-method.png",
+      "sha256": "7c01b8d09b64d8cdfdb3ad95ed781c74f5f044e639ae054d3d6b07c99fb3056c"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-new-vs-repeat.png",
+      "sha256": "17466c90ae06641b0130fd463f25b3bc2e27c51d4da56f27a510339ced97619a"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-quarantine.png",
+      "sha256": "a650772a64075bdad2e1087d824c6d5d0a7f4d4023d7a72d03edc77e28ed0f90"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-revenue.png",
+      "sha256": "c35278e16568eb91eb8c8cccd881e611b9f876a39ecf5820efc6ff86004bcd10"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-trust.png",
+      "sha256": "c981339e897712d885c8da4f28a1daa35720f5a4d634d1e75a295dd7b5084c9b"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-verdict.png",
+      "sha256": "95480c47ea0c9bed25791211cecb3b01232e614a5145e494a7c350248355d130"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-dark-what-could-change-it.png",
+      "sha256": "1df6789c08749069e6a8153f0d6b63555c833ad0f4b67d237d68a2429328b5f8"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-ai-claim-check.png",
+      "sha256": "6b0dc577616d348d38b59f3d1ea5ccbef3379661b08404a0399e1beb8c063452"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-data-health.png",
+      "sha256": "760ebbd4a78b10874cbf94d68ea7d06d3002babbb380b8a8e4e2ecaaa55e9fd6"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-executive-summary.png",
+      "sha256": "0b0f1a7f9109c977efec6429340017a2fe065e68d5845059695fac83f7f6da55"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-method.png",
+      "sha256": "4a27079f416490f7e64902adbf4837c0b0be593b139cd50db9c4d142690e3236"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-new-vs-repeat.png",
+      "sha256": "af553491c71d66084187b6e3b1865c525301cb8b4ed98d623a7efaea5d77625a"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-quarantine.png",
+      "sha256": "1f283ca3ded26a73ff737db22889c06ae4d74ca5907579d20f311856e33030f4"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-revenue.png",
+      "sha256": "cc92cb4343cac58cd36a952c5ca2e9659adf4328cd05eaa94521c488930a143e"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-trust.png",
+      "sha256": "552bf3e1e0c8602d8e4ca3cacd6b11ec0fb60e7fc11f93ddb895122aa83fe413"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-verdict.png",
+      "sha256": "46ed3ae7f758d6b49948fdb971a8ecbb6528911c7c5f950ec61d90987d9f23bf"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1280-720-light-what-could-change-it.png",
+      "sha256": "0e991b464a41ee8ed88e2bc70d2033f20796b1de0e94c2368d643386239584f2"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-ai-claim-check.png",
+      "sha256": "e34a1c9cf8399dc764f9f1ed5cba1e61bfe06e66689a0149561102c0bab53ecf"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-data-health.png",
+      "sha256": "b678a378fc985e3679829a9fc4308b568f8cfcf6b99a1687a914a8a17210f254"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-executive-summary.png",
+      "sha256": "6dc93e88010247920b433d4226ce4a840d85383b922802b33a99b2146ec21a4f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-method.png",
+      "sha256": "f8622effda77807332e91ebb3bb3d245dc80f1cc987f973b2f261949d4ef8038"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-new-vs-repeat.png",
+      "sha256": "9a74b86a69163c6e769af9ade7533708373626859b5105b34da437af644ce14e"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-quarantine.png",
+      "sha256": "f6a6e1f39bf1de48d948dadd76697a6f060392bb3277c3ebabe5b75e058aada3"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-revenue.png",
+      "sha256": "54fca5c5b4dc29d94551e429b8598446e590dae40e391948e700ce8a65469ad5"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-trust.png",
+      "sha256": "a628ee6c06137ba7bc7a97b690ff40c961c4b10aa98fd48f54dbe4468c5ff554"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-verdict.png",
+      "sha256": "d284c1e25f2442e50f9a4270624ce52a90feb9a8338faa20f0d7a8051906c4d0"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-dark-what-could-change-it.png",
+      "sha256": "db7eaab35763e3795fa4df96d4d06189194a0fc43136e48dfce45d8b66ef994f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-ai-claim-check.png",
+      "sha256": "cdbd52d356d35179e5f9a47645c5987b16aac62cde30ba2136b2f2efe382ce49"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-data-health.png",
+      "sha256": "5f9ea68442a5f3a0b895cf6ed159c86e494bca05c9c2a9c99cb7be1781c74782"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-executive-summary.png",
+      "sha256": "792b58ee8520f754b62e3d83504f4b3d9c21f383d60e5170e16ff18c615c3c81"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-method.png",
+      "sha256": "e0d04d61398af2a1244069569fb337804abd58db6317d3dcca349eac8edb761f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-new-vs-repeat.png",
+      "sha256": "c65c4acacf4d62b771b8df12d8800308f44ad63bee72a656f76dedc2a30f0a56"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-quarantine.png",
+      "sha256": "f6056cfa7ce0d794397bc417a1382c39a2ff16e33a78761f637f9af43a76122a"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-revenue.png",
+      "sha256": "17ce128dcbe0da2fc65717334ea7a47e1488ce3fb94d4f9a6ca080adede8244b"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-trust.png",
+      "sha256": "f735fa47d02ab1f6a710d10af54cc3c0ffd75b8e0ee047814ee274f8b601b403"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-verdict.png",
+      "sha256": "5326d750c3060d6edd5684d9c620d8c1c310e19955543d2618297c49102f933f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1440-900-light-what-could-change-it.png",
+      "sha256": "9aba0bad571a8048b809b4ea03796b820a3c09d82cb0174732321d5d8dce432f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-ai-claim-check.png",
+      "sha256": "6d82bb89e451621a2b5fcbfb4c33b5354c509e686365481d8322139eb949eb1c"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-data-health.png",
+      "sha256": "519edeca28e9c4fead816333f97afceddb4189094548740cd7d26134be901b3a"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-executive-summary.png",
+      "sha256": "491bb740e264685aa33c089d598710d96f38d1705c25230153b4a9d029d74335"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-method.png",
+      "sha256": "61a1f1e98da12eb9c425c5d7daba97879bb68955a96698a1ce1c0f5da78c367b"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-new-vs-repeat.png",
+      "sha256": "8234d34c28361b44f507e1c9c9453d8833eaaf11d6cf15c3e12c074e1efc930a"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-quarantine.png",
+      "sha256": "f9d6e04a9917b87602dc9c31dc203819dd80cc6dc8942bc59fd39b858879cbff"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-revenue.png",
+      "sha256": "f598f57da2b3223469779d1d4825dcb2cb10d451a019c3678d2719c2742c988f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-trust.png",
+      "sha256": "7da84b0cd3563d4fc0c282d3126bf75d5a7401e354477dd1c0fc9082bd121445"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-verdict.png",
+      "sha256": "151c5f2a32cde401ef8175eb3ea2a0e303a2e5b2aa2ac28262685038869dd200"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-dark-what-could-change-it.png",
+      "sha256": "1757082b7be3dc159ba2ab74f33092c8239845c0c9d1c2e8f25f914ba8c80308"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-ai-claim-check.png",
+      "sha256": "0a81f0d565d9c82cea0e405de10cc42929fe02dbba94006a9f973f5bbaf8a661"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-data-health.png",
+      "sha256": "a4a8d172ec4f7a84a4bda4e73f806dbc4257282b0780288d3ccb9da6b8b0cc0e"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-executive-summary.png",
+      "sha256": "2eda175ba152c1ba9b42c38da61fb7c4e254267d49c0afaa8472073f0b7348af"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-method.png",
+      "sha256": "7642b3d24c242c145a0ffaa9312fba2ecb61d42f819423a9cc5cae183536273c"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-new-vs-repeat.png",
+      "sha256": "92b3f1c4d870787a1ba432169fccc9d4b8e13e59a4c087c9a70509d8aee9884d"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-quarantine.png",
+      "sha256": "6c63f6d290eafeeaee91195f547de03217f5d3f383836dfba69d2fb97b445b4f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-revenue.png",
+      "sha256": "3977320767f9fb451bc3047616657182e553962ab1aa1153afe863dc6e95fe4b"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-trust.png",
+      "sha256": "72248ec26f588eac32cdb45217ce7cd999c35b5e3f074a52623726d5b4d83829"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-verdict.png",
+      "sha256": "65fd934a49fc5eb6c729e1b8791abc9e5b36062df0c77dbec6a9f4c0142a7c1b"
+    },
+    {
+      "path": "results/screenshots/iteration-3/1920-1080-light-what-could-change-it.png",
+      "sha256": "084e9cd9c10cf51c92e9d3c9107acffddd5a03729c14c61a9de5fc7a7c15d65d"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-ai-claim-check.png",
+      "sha256": "fed64ef9a12ac5f30aeb97a0800b8cce908ada2925e2d4ca85e8a843dff4e7c0"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-data-health.png",
+      "sha256": "7a2ce45d98823885dc12198ff14728d8ed19cbb4da49ab0d1c579829d9c00e20"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-executive-summary.png",
+      "sha256": "c47cbf49d4062a07a1866a3bc1c1cd740ef0346b64a800521ea2eb0bb59f511d"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-method.png",
+      "sha256": "3999ef8c716f526930d2d22fd63b1f118e30152d5cd065d1ed1275e2a04b6b30"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-new-vs-repeat.png",
+      "sha256": "25090d41deb798bfbd2be3f9dfd473b5f3d470aa37ce99995c8f25993fd492b3"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-quarantine.png",
+      "sha256": "68d0208869cfdaab094b781b23ab34667b38f8ae136172d1649f8d098a0648fa"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-revenue.png",
+      "sha256": "d1d7329e9872fcebe0363a5fc4c2a0a9ed4a1242bdc4e3aedb8c947ff30a45ea"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-trust.png",
+      "sha256": "6c8be4715614c8c87a008250d2f7e5b2351f8ed63c52264562fc2a0af37d52c3"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-verdict.png",
+      "sha256": "523e0ce92d1a644649c46403954593de2136540fd057cd7b103b23ff6f4714ca"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-dark-what-could-change-it.png",
+      "sha256": "b09ab2c89ba4c2946950d56ed6e2e04441649029d3fee642027a408765656053"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-ai-claim-check.png",
+      "sha256": "8bfa721732ed09392b006c498abd5522a71d8c5ef52ce24d76ff0843bc5f91f7"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-data-health.png",
+      "sha256": "8cb8975ea9e7f0fdbe057def544b847b8a0bfbaee1aa8ccd5cd429b161c1eaf1"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-executive-summary.png",
+      "sha256": "a55b7eff4f82407d1217c46cb52b2dc4d8daad7f3e1400197d19e8272ba40563"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-method.png",
+      "sha256": "07b597477aa646deab1f8ad554a2dd7c3f72f2525f27fb9f11e560a4412880d9"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-new-vs-repeat.png",
+      "sha256": "2b68aee010dd39573ec111335149b99968775d7631f713fce2a5ad5742470076"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-quarantine.png",
+      "sha256": "93197fa714954d8cc412b82a872d39a5339f5c44070ca5a8121c725e8ba6ac22"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-revenue.png",
+      "sha256": "966d1fa673de8dc28b5cfc39806faa63dbfb476283f473ca5368e25e442d4e4f"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-trust.png",
+      "sha256": "c7972ce3f962b74a1c95a38b5bc52f129f9c565ee147b64adf0db605d27c2a40"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-verdict.png",
+      "sha256": "9658a5ca40e649b2187813240b0fd39b9542296fcbd004ca5a91ff449aa39562"
+    },
+    {
+      "path": "results/screenshots/iteration-3/768-1024-light-what-could-change-it.png",
+      "sha256": "9cd6e7bfc2bf44bb94f73a022bb20d82c312ef3c5def8d09392ec1ff400a9f5c"
+    }
+  ]
+}

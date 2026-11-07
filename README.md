@@ -42,6 +42,8 @@ coverage is a data-quality indicator, not probability that the business answer i
 The mocked drafter is not a live model. Codex assistance is disclosed honestly.
 
 ## Bonus website
+Live static demo: https://evidence-room-tawny.vercel.app
+
 ```sh
 cd web
 npm ci

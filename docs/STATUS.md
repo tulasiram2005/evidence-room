@@ -21,14 +21,14 @@
 
 - Baseline plus three design revisions passed: 320 screenshots; eight theme/viewport combinations per run; no reported axe violations, console errors or external requests.
 - Local Lighthouse: performance 100, accessibility 100, best practices 100, SEO 82. Meta description and robots.txt fixes build successfully; their effect has not been remeasured.
-- Vercel dashboard identifies the selected workspace as Hobby (checked 2026-11-07). No deployment created yet.
+- Vercel dashboard identifies the selected workspace as Hobby (checked 2026-11-07). Static deployment is READY; HTTP/asset/header checks passed. Hosted interactions remain unverified.
 
 ## Not yet fulfilled from the expanded master prompt
 - Hosted CI execution and remaining SQL lint/type gates. Python transitive lock, local Ruff/Bandit/pip-audit and TypeScript build checks are implemented.
 - Eight aggregate tools and optional Gemini/Ollama JSON transports implemented and unit-tested. Bounded Gemini native function calling is implemented with preserved call IDs/signatures, strict tool validation, three rounds/eight calls maximum, and fallback tests. Live provider validation remains unmeasured.
 - The complete custom design specification (fonts, every-number evidence drawers,
   animated waterfall/bounds visuals, copy controls and shortcut sheet).
-- Cloudflare/Vercel deployment and verified account allowance/response headers.
+- Complete hosted interaction regression (browser control became unavailable).
 - Candidate's independent review, personalized explanation and actual submission.
 
 ## Important analytical adjustments

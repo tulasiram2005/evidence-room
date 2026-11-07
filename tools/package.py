@@ -2,7 +2,7 @@
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 ROOT=Path(__file__).resolve().parents[1]
-allowed={'.py','.md','.csv','.json','.sql','.toml','.yml','.yaml','.tsx','.css','.html','.mjs','.svg'}
+allowed={'.py','.md','.csv','.json','.sql','.toml','.yml','.yaml','.tsx','.css','.html','.mjs','.svg','.png','.txt'}
 output=ROOT.parent/'Evidence_Room_Submission.zip'
 with ZipFile(output,'w',ZIP_DEFLATED) as archive:
     for p in sorted(ROOT.rglob('*')):

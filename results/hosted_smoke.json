@@ -1,0 +1,21 @@
+{
+  "url": "https://evidence-room-tawny.vercel.app",
+  "status": 200,
+  "headers": {
+    "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+    "x-frame-options": "DENY",
+    "x-content-type-options": "nosniff",
+    "referrer-policy": "no-referrer"
+  },
+  "assets": [
+    {
+      "path": "/assets/index-VjZDDtd_.js",
+      "matches_local": true
+    },
+    {
+      "path": "/assets/index-CQA8SlrS.css",
+      "matches_local": true
+    }
+  ],
+  "passed": true
+}
