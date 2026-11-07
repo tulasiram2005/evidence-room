@@ -62,5 +62,21 @@
     "conditional": true,
     "id": "unsupported_face_only",
     "september_paise": 113740000
+  },
+  {
+    "august_paise": 186620000,
+    "change_paise": -72880000,
+    "change_percent": -39.052620297931625,
+    "conditional": true,
+    "id": "combined_favour_august_known_currency",
+    "september_paise": 113740000
+  },
+  {
+    "august_paise": 179440000,
+    "change_paise": -64640000,
+    "change_percent": -36.023183236736514,
+    "conditional": true,
+    "id": "combined_favour_september_known_currency",
+    "september_paise": 114800000
   }
 ]

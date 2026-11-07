@@ -1,6 +1,37 @@
 {
+  "additional_september_inr_to_erase_conditional_gap": "646400",
+  "conditional_robustness": "drop_in_all_defined_scenarios",
+  "excluded_face_values_by_currency": [
+    {
+      "currency": "EUR",
+      "face_value": "6500",
+      "month": "2026-08"
+    },
+    {
+      "currency": "INR",
+      "face_value": "48800",
+      "month": "2026-08"
+    },
+    {
+      "currency": "INR",
+      "face_value": "10600",
+      "month": "unattributed"
+    }
+  ],
+  "foreign_currency": [
+    {
+      "break_even_inr_per_unit": null,
+      "currency": "EUR",
+      "face_value": "6500",
+      "interpretation": "No nonnegative rate reverses the baseline decline; this adds August revenue.",
+      "month": "2026-08"
+    }
+  ],
+  "invalid_date_positive_known_currency_paise": 1060000,
+  "known_currency_conditional_max_change_paise": -64640000,
+  "known_currency_conditional_min_change_paise": -72880000,
   "materiality_percent": 10,
-  "reason": "Unsupported exchange rates and invalid dates prevent finite unconditional bounds. Face-value scenarios are conditional, not validated INR bounds.",
+  "scope": "Conditional on supplied positive amounts and possible key/status/date repairs. Exact duplicates never reinstated; conflict chooses at most one version. Non-positive amounts cannot be repaired. Unknown-currency amounts are separate, not INR. Arbitrary corrected prices or new transactions are outside these bounds.",
   "trusted_gap_inr": "671600",
   "unconditional_bounds": null
 }

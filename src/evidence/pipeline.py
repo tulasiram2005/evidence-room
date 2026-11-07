@@ -181,8 +181,11 @@ def run():
         values = totals(classify(tables['orders'], {r['customer_id'] for r in tables['customers']}, {r['product_id'] for r in tables['products']}, options))
         aug, sep = [values[m] for m in MONTHS]
         scenarios.append({'id': name, 'august_paise': aug, 'september_paise': sep, 'change_paise': sep-aug, 'change_percent': float(Decimal(sep-aug) * 100 / aug), 'conditional': name == 'unsupported_face_only'})
+    from .sensitivity import analyze
+    combined, flip = analyze(rows, independent, classify, tables['orders'], {r['customer_id'] for r in tables['customers']}, {r['product_id'] for r in tables['products']})
+    scenarios.extend(combined)
     write_json(results / 'sensitivity.json', scenarios)
-    write_json(results / 'flip.json', {'trusted_gap_inr': str(Decimal(independent[MONTHS[0]]-independent[MONTHS[1]])/100), 'unconditional_bounds': None, 'reason': 'Unsupported exchange rates and invalid dates prevent finite unconditional bounds. Face-value scenarios are conditional, not validated INR bounds.', 'materiality_percent': 10})
+    write_json(results / 'flip.json', flip)
     from .summary import generate
     generate(ROOT, kpis, scenarios, rows)
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT / 'data/raw').glob('*.csv'))}
