@@ -1,7 +1,7 @@
 # Evidence Room architecture
 
 Evidence Room separates offline computation from static presentation. Python
-produces the evidence; the browser renders a checked subset. There is no hosted
+produces the evidence; the browser renders a checked subset, and downloadable BI snapshots preserve the published case. There is no hosted
 Python API, database service, authentication service or runtime model connection.
 
 ## Data flow and verification
@@ -25,6 +25,10 @@ flowchart TB
         Results --> Mock["Deterministic mock draft"]
         Mock --> Verify["Claim checker: number, evidence, cause and scope checks"]
     end
+    Results --> Metrics["Monthly revenue, August adjustments and disposition counts"]
+    Metrics --> PowerBI["Power BI import model and report"]
+    Metrics --> Tableau["Tableau Hyper extracts and dashboard"]
+    Results --> Audit["Excel row audit, reconciliation and repair scenarios"]
     Results --> Export["Allowlisted export.py payload"]
     Verify --> Export
     Export --> Bundle["web/src/evidence.json + React / TypeScript / CSS"]
@@ -36,6 +40,16 @@ The rule engine partitions every raw row into exactly one disposition. The sum
 must equal the input row count. Money is parsed with Decimal and retained as
 integer INR paise. SQL and pandas results must agree before publication. The
 pipeline records source/output hashes; repeat runs are tested for determinism.
+
+## Business intelligence and row-level audit
+
+| Deliverable | Source and grain | What a reviewer can verify |
+|---|---|---|
+| [Power BI project](../dashboard/Power-BI.zip) | Embedded Power Query M tables hold one row per month, August adjustment or disposition. The PBIR report references its sibling import model by relative path. | Three native visuals compare monthly revenue, bridge the August balance and count row dispositions. Refresh reloads the packaged tables. |
+| [Tableau workbook](../dashboard/Evidence-Room.twbx) | The TWBX contains CSV source tables and Hyper extracts for the same three sets of aggregates. | The Revenue review dashboard combines the monthly chart, signed reconciliation and data-quality counts. |
+| [Excel audit](../dashboard/Revenue-audit.xlsx) | The clean and excluded CSVs supply one classified record per original order row. The workbook retains the source row number, order ID, month, disposition, reason and trusted amount. | Formula-driven sheets tie the 244 records to monthly totals, test the August closing balance and split the monthly change into order-count and average-value contributions. |
+
+These files are versioned snapshots. When inputs or recognition rules change, rerun the pipeline, update the BI files from the resulting exports, and check them against the new totals before publishing. For the August–September release, the checks are 113 and 84 trusted orders, INR 1,809,000 and INR 1,137,400 in trusted revenue, and zero residual in both Excel reconciliations. The [dashboard index](../dashboard/) and [project report](Evidence-Room-Project-Report.pdf) link the release artifacts.
 
 ## Optional provider path
 

@@ -136,10 +136,13 @@ flowchart LR
     H --> I
     I --> J["React + TypeScript / Vite"]
     J --> K["Local browser or Vercel static hosting"]
+    G --> L["Power BI and Tableau aggregate snapshots"]
+    C --> M["Excel row audit"]
+    G --> M
 ```
 
 See [the detailed architecture](docs/ARCHITECTURE.md) for module responsibilities,
-optional provider boundaries and the deployment flow.
+BI data sources, snapshot refresh behavior, optional provider boundaries and the deployment flow.
 
 ## Technology stack
 

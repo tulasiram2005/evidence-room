@@ -1,13 +1,22 @@
-# Measured implementation status — 2026-11-07
+# Measured implementation status
 
-## Implemented and exercised
+## 25 November 2026 release
+
+- Reproduced the August and September revenue totals with exact SQL/pandas parity. All 46 tests and the production web build passed.
+- Seven timed pipeline runs on the 244-row sample took 271–290 ms after one warm-up, with a median of 283 ms.
+- The packaged Tableau dashboard opened in Tableau Public Desktop on macOS. The Excel workbook reopened with zero residuals in the August reconciliation and the monthly revenue decomposition.
+- The Power BI project and report definitions passed schema checks. Native Windows rendering and publication of a hosted Tableau Public view remain unverified.
+
+[BI downloads](../dashboard/) · [Full project report](Evidence-Room-Project-Report.pdf)
+
+## 7 November 2026 verification
 - All three synthetic CSV source files preserved.
 - String ingestion, missingness/schema/status/currency profile and input hashes.
 - Finance trust rules, reason-coded exports, all-row partition and safe CSV text.
 - Executed SQLite monthly revenue, overall/monthly products, windowed cohorts,
   health, exclusions and reconciliation queries.
 - Independent pandas monthly/overall-top-products/cohort parity.
-- Exact signed reconciliation, eight individual scenarios and two conditional
+- Exact signed reconciliation, a baseline, seven individual scenarios and two conditional
   combined scenarios; currency-aware break-even explanation.
 - Executive summary within 150–250 words and numerical traceability test.
 - Structured mock draft, evidence references and planted-error claim checks.
