@@ -8,7 +8,7 @@ presents the investigation with reconciliation tables, rejection receipts, scena
 comparisons and verified AI claims.
 
 **[Open the live demo](https://evidence-room-tawny.vercel.app)** ·
-[Architecture](docs/ARCHITECTURE.md) · [Findings](executive_summary.md) ·
+[Project report (PDF)](docs/Evidence-Room-Project-Report.pdf) · [Architecture](docs/ARCHITECTURE.md) · [Findings](executive_summary.md) ·
 [Verification status](docs/STATUS.md)
 
 ## What the supplied data shows
