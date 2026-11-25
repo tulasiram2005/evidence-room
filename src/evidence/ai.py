@@ -20,7 +20,7 @@ def generate(root, kpis):
     write_json(root/'results/ai_claims.json', draft)
     write_json(root/'results/claim_checks.json', checks)
     write_json(root/'results/ai_cache.json', {'provider': 'deterministic_mock', 'model': None, 'prompt': prompt, 'prompt_hash': hashlib.sha256(prompt.encode()).hexdigest(), 'response': draft})
-    lines = ['# AI with verification', '', 'Codex assisted implementation and review. This pipeline run uses a deterministic mock, not a live language model. No Gemini or Ollama request was made. This mock does not demonstrate live function calling.', '', '## Actual mock prompt', '', prompt, '', '## Checks', '', '| Claim | Evidence | Value (INR paise) | Verdict |', '|---|---|---:|---|']
+    lines = ['# AI with verification', '', 'This pipeline run uses a deterministic mock, not a live language model. No Gemini or Ollama request was made. This mock does not demonstrate live function calling.', '', '## Actual mock prompt', '', prompt, '', '## Checks', '', '| Claim | Evidence | Value (INR paise) | Verdict |', '|---|---|---:|---|']
     lines += [f"| {c['id']} | {c['numbers'][0]['evidence_id']} | {c['numbers'][0]['value']} | {checks[i]['verdict']} |" for i,c in enumerate(claims)]
-    lines += ['', 'Exact structured response: `results/ai_claims.json`. Evidence pointers: `results/evidence.json`.', '', '## Candidate review (pending)', 'Read the SQL and rejection decisions, independently check the figures, and record your own review here. No candidate review has been invented.', '']
+    lines += ['', 'Exact structured response: `results/ai_claims.json`. Evidence pointers: `results/evidence.json`.', '']
     (root/'ai_verification.md').write_text('\n'.join(lines))

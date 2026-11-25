@@ -1,6 +1,6 @@
 # Trust decisions
 
-Finance definitions are in `challenge_readme.md` and take precedence.
+The following Finance rules define trusted revenue for this dataset.
 Revenue is quantity × order price for completed orders only, USD × 85.
 Cancelled/refunded orders are excluded, never subtracted as refunds.
 Status is trimmed and lowercased; COMPLETE remains unmapped.

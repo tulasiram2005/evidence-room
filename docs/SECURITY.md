@@ -7,7 +7,7 @@
 - Static publication must exclude raw/clean files and customer names/keys.
 - Repository is public by owner request. The Vercel static deployment serves only the reviewed web output; raw and cleaned CSVs are not deployed.
 - Numeric claim schema rejects unknown fields and nonfinite numbers.
-- Candidate must inspect submission for personal details before sharing.
+- Inspect exported files for personal details before sharing.
 - Dependency audits and hosted CI are pending until executed; they are not claimed passed.
 
 ## Additional measured checks

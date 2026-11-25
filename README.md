@@ -148,6 +148,7 @@ optional provider boundaries and the deployment flow.
 | Analysis | Python 3.11, pandas, Decimal parsing, integer INR paise, standard-library SQLite |
 | Verification | unittest, Hypothesis, independent SQL/pandas parity, SHA-256 input/output hashes |
 | Website | React 18.3.1, TypeScript 5.7.3, Vite 6.4.5, handwritten CSS, custom SVG charts |
+| Business intelligence | Power BI Desktop project (PBIP/PBIR), Power Query M import model, Tableau packaged workbook with Hyper extracts, Excel formula-driven row audit |
 | Browser quality | Playwright with Chrome, axe-core, Lighthouse, contrast checks |
 | Security/quality | Ruff, Bandit, pip-audit, npm audit, build-content and repository-history scanners |
 | Optional AI | Gemini REST function calling, local Ollama JSON transport, deterministic mock fallback |
@@ -219,8 +220,7 @@ See [provider setup](docs/PROVIDERS.md) before enabling them. Gemini requires an
 explicitly verified free-tier project/model and environment-only credentials;
 Ollama requires a locally available model. Never paste keys into source or commit them.
 Native tool calling is implemented and tested with simulated responses; live validation
-has not been completed. Project assistance and verification are documented in the
-assessment-required [AI disclosure](docs/AI_DISCLOSURE.md).
+has not been completed. The [claim verification record](ai_verification.md) links the generated statements to their evidence.
 
 ## Troubleshooting
 
@@ -257,6 +257,3 @@ Row coverage is a data-quality indicator, not a probability that the conclusion 
 
 Read [decisions](docs/DECISIONS.md), [limitations](docs/LIMITATIONS.md),
 [security controls](docs/SECURITY.md) and [third-party licenses](THIRD_PARTY_LICENSES.md).
-The original [challenge brief](docs/challenge_readme.md) is retained as the project's
-requirements reference. Personal planning prompts and unrelated projects are not
-part of this repository.

@@ -83,7 +83,7 @@ validation remains unmeasured. See [provider details](PROVIDERS.md).
 ## Security and publication boundaries
 
 - The public Git repository contains synthetic source data, reproducible code,
-  project documentation and test evidence. It contains no personal master prompts.
+  project documentation and test evidence.
 - The website contains aggregates and selected rejection fields. Full raw/clean
   CSVs stay outside the deployed output.
 - Keys belong in environment variables; private provider logs and `.env` files

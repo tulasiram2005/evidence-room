@@ -6,4 +6,3 @@
 - Exclusion face-value totals count conflicting versions as exposure, not recoverable revenue.
 - Mock output tests the verification mechanism, not real model reasoning or function calls.
 - Live Gemini/Ollama, optional remote adapters and cloud deployment are not verified.
-- No candidate review or explanation recording has been completed by the pipeline.

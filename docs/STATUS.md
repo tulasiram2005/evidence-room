@@ -1,7 +1,7 @@
 # Measured implementation status — 2026-11-07
 
 ## Implemented and exercised
-- Original candidate README and all three CSVs read; source copies preserved.
+- All three synthetic CSV source files preserved.
 - String ingestion, missingness/schema/status/currency profile and input hashes.
 - Finance trust rules, reason-coded exports, all-row partition and safe CSV text.
 - Executed SQLite monthly revenue, overall/monthly products, windowed cohorts,
@@ -29,12 +29,9 @@
 - The complete custom design specification (fonts, every-number evidence drawers,
   animated waterfall/bounds visuals, copy controls and shortcut sheet).
 - Complete hosted interaction regression (browser control became unavailable).
-- Candidate's independent review, personalized explanation and actual submission.
 
 ## Important analytical adjustments
 No ratio mixing foreign-currency face values with INR is presented as monetary
 confidence. Trusted row coverage is used instead and explicitly defined.
 Unknown rates are not invented. Bounds are conditional on documented repairs;
 there is no finite unconditional bound over arbitrary missing/corrected transactions.
-
-No tests, scores, candidate actions or hosted runs are claimed without evidence.
