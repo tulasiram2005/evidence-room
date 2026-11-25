@@ -7,8 +7,8 @@
 | Open the analysis | What to inspect |
 |---|---|
 | [Power BI project (ZIP)](./Power-BI.zip?raw=true) | Extract the folder, open Evidence.pbip in Power BI Desktop on Windows, then select **Refresh**. The self-contained import model supplies the two monthly totals, August adjustments and row dispositions to three native visuals. |
-| [Tableau workbook (TWBX)](./Evidence-Room.twbx?raw=true) | Open in Tableau Desktop or Tableau Public Desktop and select **Revenue review**. The package includes the dashboard, its three worksheets three embedded Hyper extracts and their CSV source tables. |
-| [Excel audit (XLSX)](./Revenue-audit.xlsx?raw=true) | Open **Review** for the totals. Filter **Row audit** to see the source record and decision, inspect the running balance in **Reconciliation**, or compare assumptions on **Repair scenarios**. |
+| [Tableau workbook (TWBX)](./Evidence-Room.twbx?raw=true) | Open in Tableau Desktop or Tableau Public Desktop and select **Revenue review**. Select a row disposition to filter the monthly chart. The nine signed August adjustments use their own zero reference line and scale. Opening mixed face value and closing INR appear separately. Two embedded Hyper extracts supply the three worksheets. |
+| [Excel audit (XLSX)](./Revenue-audit.xlsx?raw=true) | Open **Review** for the totals. Filter the 17-column **Row audit** to inspect raw dates, customer and product keys, quantity, price, currency, status and exception codes. Reconciliation formulas sum the eligible source amounts. The ten scenario totals use row-level amounts and fixed inclusion months on **Policy assignments**. |
 
 **Verification.** The packaged workbook opened in Tableau Public Desktop on macOS. The Power BI project and report definitions passed Microsoft JSON schema checks. Its Windows Desktop render remains unverified. The saved Excel workbook was reopened and its cached totals, bridge balance and decomposition residual were checked.
 
