@@ -1,4 +1,4 @@
-# Evidence Room
+# Evidence Room · [Dashboard](dashboard/)
 
 > Revenue dropped in September 2026 versus August 2026. Is it a real business change or a data problem?
 
