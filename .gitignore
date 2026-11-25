@@ -10,3 +10,4 @@ web/dist/
 results/provider_run.json
 
 .venv311/
+dashboard/.~*.twbr
